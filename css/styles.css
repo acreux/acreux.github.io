@@ -2,27 +2,20 @@ body {
   padding-top: 50px;
 }
 
-/* Arrows */
-.slick-prev,
-.slick-next
-{
-    font-size: 0;
-    line-height: 0;
 
+#bg {
+    left: 0;
     position: absolute;
-    top: 50%;
+    top: 0;
+}
+.bgwidth {
+    width: 100%;
+}
 
-    display: block;
-
-    width: 20px;
-    height: 20px;
-    margin-top: -10px;
-    padding: 0;
-
-    cursor: pointer;
-
-    color: transparent;
-    border: none;
-    outline: none;
-    background: #FF0000;
+#introText {
+    color: white;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 30px;
+    position: absolute;
+    width: 100%;
 }
