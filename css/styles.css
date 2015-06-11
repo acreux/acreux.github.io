@@ -12,10 +12,14 @@ body {
     width: 100%;
 }
 
-#introText {
+.bgheight {
+    height: 100%;
+}
+/*
+#about {
     color: white;
     font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
     font-size: 30px;
     position: absolute;
     width: 100%;
-}
+}*/
