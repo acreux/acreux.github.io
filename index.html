@@ -33,12 +33,10 @@
             <div class="collapse navbar-collapse navbar-ex1-collapse">
                 <ul class="nav navbar-nav">
                     <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
-                    <li><a class="page-scroll" href="#page-top"></a>
-                    </li>
                     <li><a class="page-scroll" href="#about">About</a></li>
                     <li><a class="page-scroll" href="#education">Education</a></li>
                     <li><a class="page-scroll" href="#experience">Experience</a></li>
-                    <li><a class="page-scroll" href="#projects">Projects</a></li>
+                    <li><a class="page-scroll" href="#project">Project</a></li>
                     <li><a class="page-scroll" href="#contact">Contact</a></li>
                 </ul>
             </div>
@@ -47,6 +45,13 @@
         <!-- /.container -->
     </nav>
     <img alt="" id="bg" src="img/background.jpg" class="bgwidth">
+    <div class="intro-text">
+    <p >Hi! I'm Antoine, a French young stargazer eager to learn!</p>
+    <p>I study Computer Science in Singapore while exploring Southeast Asia until December 2015.
+    </p>
+    <p>Footloose, I look for a new journey in a beautiful country starting from January 2016. I am interested in any opportunity in data analytics, software engineering, or as they call it, the "Big Data wave".
+    </p>
+    </div>
     <div>
         <a class="page-scroll" id="arrow-enter" class="btn btn-circle btn-circle-dark" href="#about"><i class="fa-4x fa fa-arrow-circle-down animated arrow-down"></i>
         </a>
@@ -91,8 +96,7 @@
             <section id="education" class="education-section">
                 <div class="container">
                     <div class="row">
-                        <div class="col-lg-2"></div>
-                        <div class="col-lg-8">
+                        <div class="col-lg-8 col-lg-offset-2">
                             <div class="row featurette">
                                 <div class="col-md-7">
                                     <h2 class="featurette-heading">Ecole Centrale Paris <div class="text-muted">Paris, France</div></h2>
@@ -175,27 +179,27 @@
                         </div>
                         <!-- PROJECTS -->
                         <div class="row">
-                            <div id="projects" class="row text-center">
+                            <section id="project" class="row text-center">
                                 <h1>Projects</h1>
-                            </div>
-                            <!-- Three columns of text below the carousel -->
-                            <div class="row">
-                                <div class="col-lg-4">
-                                    <img class="img-circle" src="img/piano.jpg" alt="" height="140" width="140">
-                                    <h2>The Pianocktail</h2>
-                                    <p>Description Pianocktail</p>
+                                <!-- Three columns of text below the carousel -->
+                                <div class="row">
+                                    <div class="col-lg-4">
+                                        <img class="img-circle" src="img/piano.jpg" alt="" height="140" width="140">
+                                        <h2>The Pianocktail</h2>
+                                        <p>Description Pianocktail</p>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <img class="img-circle" src="img/smartconsult.jpg" alt="" height="140" width="140">
+                                        <h2>SmartConsult</h2>
+                                        <p>Description SmartConsult</p>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <img class="img-circle" src="img/maze.jpg" alt="" height="140" width="140">
+                                        <h2>The Distributed Maze</h2>
+                                        <p>Description Maze</p>
+                                    </div>
                                 </div>
-                                <div class="col-lg-4">
-                                    <img class="img-circle" src="img/smartconsult.jpg" alt="" height="140" width="140">
-                                    <h2>SmartConsult</h2>
-                                    <p>Description SmartConsult</p>
-                                </div>
-                                <div class="col-lg-4">
-                                    <img class="img-circle" src="img/maze.jpg" alt="" height="140" width="140">
-                                    <h2>The Distributed Maze</h2>
-                                    <p>Description Maze</p>
-                                </div>
-                            </div>
+                            </section>
                             <hr class="featurette-divider">
                             <!-- /END THE FEATURETTES -->
                         </div>
@@ -218,7 +222,7 @@
     </center>
     </div>
     <!-- script references -->
-    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
     </script>
     <script>
