@@ -52,3 +52,19 @@
     position: absolute;
     left: 50%;
 }
+
+.about-section, .education-section, .experience-section,
+.skill-section, .contact-section  {
+    padding-top: 150px;
+    text-align: center;
+}
+
+.about-section {
+    background: rgba(0, 0, 0, 0) no-repeat scroll center bottom / cover ;
+    height: 100%;
+    padding: 0;
+    display: table;
+    padding: 100px 0;
+    text-align: center;
+    width: 100%;
+}
