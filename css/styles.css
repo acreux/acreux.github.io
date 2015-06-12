@@ -28,7 +28,11 @@
 #links a {
     color: grey;
     opacity: .5;
-    margin: 20px;
+    margin: 26px;
+}
+
+#links a:hover{
+    opacity: 0.95;
 }
 
 #content {
