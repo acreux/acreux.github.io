@@ -25,28 +25,27 @@
 }
 
 .arrow-down {
-    color: grey;
+    color: white;
     opacity: .5;
 }
 
 .arrow-down-section {
     padding-top: 50px;
-    color: grey;
+    color: white;
     opacity: .5;
 }
 
 
-.grey {
-    color: grey;
+.white {
+    color: white;
     opacity: .5;
 }
 
 #links a {
-    color: grey;
+    color: white;
     opacity: .5;
     margin: 26px;
 }
-
 
 #links a:hover, #arrow-enter:hover {
     opacity: 0.95;
@@ -63,11 +62,14 @@
 
 .intro-text {
     color: white;
-    background: transparent;
-    bottom: 100px;
+    background: rgba(0, 0, 0, 0.5);
+    top: 80px;
+    right: 0;
+    width: 400px;
     position: absolute;
-    font-size: 40px;
-    left: 50%;
+    font-size: 15px;
+    line-height:1.5;
+    padding:10px;
 }
 
 #arrow-enter {
