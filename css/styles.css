@@ -24,12 +24,26 @@
     width: 100%;
 }
 
-#links a, #arrow-enter {
+.arrow-down {
+    color: grey;
+    opacity: .5;
+}
+
+.arrow-down-section {
+    padding-top: 50px;
+    color: grey;
+    opacity: .5;
+}
+
+
+.grey {
     color: grey;
     opacity: .5;
 }
 
 #links a {
+    color: grey;
+    opacity: .5;
     margin: 26px;
 }
 
