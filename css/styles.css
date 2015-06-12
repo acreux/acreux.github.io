@@ -21,17 +21,20 @@
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 30px;
     position: absolute;
-    
     width: 100%;
 }
 
-#links a {
+#links a, #arrow-enter {
     color: grey;
     opacity: .5;
+}
+
+#links a {
     margin: 26px;
 }
 
-#links a:hover{
+
+#links a:hover, #arrow-enter:hover {
     opacity: 0.95;
 }
 
@@ -43,3 +46,9 @@
     width: 100%;
 }
 
+#arrow-enter {
+    background: transparent;
+    bottom: 10px;
+    position: absolute;
+    left: 50%;
+}
