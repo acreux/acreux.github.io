@@ -35,7 +35,6 @@
     opacity: .5;
 }
 
-
 .white {
     color: white;
     opacity: .5;
@@ -47,7 +46,8 @@
     margin: 26px;
 }
 
-#links a:hover, #arrow-enter:hover {
+#links a:hover,
+#arrow-enter:hover {
     opacity: 0.95;
 }
 
@@ -60,18 +60,39 @@
     height: 100%;
 }
 
-.intro-text {
-    color: white;
-    background: rgba(0, 0, 0, 0.5);
+.intro-wrap {
     top: 80px;
     left: 40px;
-    width: 400px;
     position: absolute;
-    font-size: 15px;
-    line-height:1.5;
-    padding:10px;
+}
+
+.intro-w {
+    background: rgba(0, 0, 0, 0.5);
     -moz-border-radius: 15px;
     border-radius: 15px;
+}
+
+.v-align{
+        display: flex;
+    align-items: center;
+}
+
+.profile-pic-container {
+    text-align: center;
+}
+
+#profile-image {
+    display:table-cell;
+    vertical-align:middle;
+}
+
+
+.intro-text {
+    text-align: center;
+    line-height: 1.5;
+    color: white;
+    padding: 15px;
+    margin: 5px;
 }
 
 #arrow-enter {
@@ -81,17 +102,13 @@
     left: 50%;
 }
 
-/*.about-section, .education-section, .experience-section,
-.skill-section, .contact-section  {
-    padding-top: 150px;
-    text-align: center;
-}*/
-
-.about-section {
+.about-section,
+.education-section,
+.experience-section,
+.skill-section,
+.contact-section {
     background: #eee none repeat scroll 0 0;
-    /*padding-top: 100px;*/
     text-align: justify;
-    /*background: rgba(0, 0, 0, 0) no-repeat scroll center bottom / cover ;*/
     height: 100%;
     width: 100%;
     display: block;
