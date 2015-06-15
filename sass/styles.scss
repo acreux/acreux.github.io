@@ -10,6 +10,10 @@
 // @import "font-awesome-compass";
 @import "font-awesome";
 
+$button-color: white;
+$button-opacity: 0.5;
+$button-opacity-hover: 0.95;
+
 .bofy#bg {
     left: 0;
     position: absolute;
@@ -24,38 +28,35 @@
     height: 100%;
 }
 
+.buttons {
+    color: $button-color;
+    opacity: $button-opacity;
+    &:hover {
+            opacity: $button-opacity-hover;
+        }
+}
+
 #links {
     font-size: 30px;
     position: absolute;
     width: 100%;
+
+    a {
+        @extend .buttons;
+        margin: 26px;
+    }
 }
 
 .arrow-down {
-    color: white;
-    opacity: .5;
-}
-
-.arrow-down-section {
+    @extend .buttons;
     text-align: center;
     padding: 50px;
-    color: white;
-    opacity: .5;
 }
 
-.white {
-    color: white;
-    opacity: .5;
-}
-
-#links a {
-    color: white;
-    opacity: .5;
-    margin: 26px;
-}
-
-#links a:hover,
-#arrow-enter:hover {
-    opacity: 0.95;
+#arrow-enter {
+    bottom: 10px;
+    position: absolute;
+    left: 50%;
 }
 
 #content {
@@ -96,12 +97,7 @@
     margin: 5px;
 }
 
-#arrow-enter {
-    background: transparent;
-    bottom: 10px;
-    position: absolute;
-    left: 50%;
-}
+
 
 .nav-section {
     background: #eee none repeat scroll 0 0;
