@@ -30,8 +30,8 @@
                     <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
                     <li><a class="page-scroll" href="#education">Education</a></li>
                     <li><a class="page-scroll" href="#experience">Experience</a></li>
-                    <li><a class="page-scroll" href="#skill">Project</a></li>
-                    <li><a class="page-scroll" href="#project">Project</a></li>
+                    <li><a class="page-scroll" href="#project">Projects</a></li>
+                    <!-- <li><a class="page-scroll" href="#skills">Skills</a></li> -->
                     <li><a class="page-scroll" href="#contact">Contact</a></li>
                 </ul>
             </div>
@@ -83,12 +83,12 @@
                             <p class="description-h1">Master of Engineering</br>Majors in Mathematics and Physics</p>
                         </div>
                         <div class="col-md-5">
-                            <img src="holder.js/300x200?theme=sky">
+                            <img data-src="holder.js/300x200?theme=sky" src="img/ecp.jpg">
                         </div>
                     </div>
                     <div class="row v-align education-featurette">
                         <div class="col-md-5">
-                            <img data-src="holder.js/300x200?theme=sky" class="featurette-img">
+                            <img data-src="holder.js/300x200?theme=sky" src="img/nus.jpg">
                         </div>
                         <div class="col-md-7">
                             <h2 class="featurette-h1">National University of Singapore</h2>
@@ -127,7 +127,7 @@
                         </div>
                     </div>
                     <div class="row v-align experience-featurette">
-                    <div class="col-md-7">
+                        <div class="col-md-7">
                             <h2 class="featurette-h1">Data Scientist Intern at CrayonData</h2>
                             <p class="featurette-h2">Singapore</p>
                             <p class="description-h1">Worked on Watson IBM</br>Took part in the crawling, cleaning and classification of shopping items</p>
@@ -139,20 +139,64 @@
                     <div class="row arrow-down-section">
                         <a class="page-scroll btn btn-circle" href="#project"><i class="arrow-down"></i></a>
                     </div>
+                </div>
             </section>
             <!-- PROJECTS -->
             <section id="project" class="nav-section">
-                <div class="row v-align featurette">
-                </div>
-                <div class="row arrow-down-section">
-                    <a class="page-scroll btn btn-circle" href="#project"><i class="arrow-down"></i></a>
+                <div class="col-lg-12 content-section">
+                    <div id="project-bubbles" class="row">
+                        <div class="col-lg-4">
+                            <img class="img-circle" data-src="holder.js/140x140?theme=sky" src="img/smartconsult.jpg">
+                            <h2>SmartConsult</h2>
+                            <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor </p>
+                        </div>
+                        <!-- /.col-lg-4 -->
+                        <div class="col-lg-4">
+                            <img class="img-circle" data-src="holder.js/140x140?theme=sky" src="img/piano.jpg">
+                            <h2>The Pianocktail</h2>
+                            <p>Duis mollis, est non commodo condimentum nibh.</p>
+                        </div>
+                        <!-- /.col-lg-4 -->
+                        <div class="col-lg-4">
+                            <img class="img-circle" data-src="holder.js/140x140?theme=sky" src="img/maze.jpg">
+                            <h2>The Maze</h2>
+                            <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget</p>
+                        </div>
+                    </div>
+                    <div id="skill-bubbles" class="row">
+                        <div class="col-lg-4">
+                            <img class="img-circle" data-src="holder.js/140x140?theme=sky" src="img/smartconsult.jpg">
+                            <h2>Heading</h2>
+                            <p>Donec sed odio dui. Etiam m malesuada magna mollis euismod. Nullam id dolor </p>
+                        </div>
+                        <!-- /.col-lg-4 -->
+                        <div class="col-lg-4">
+                            <img class="img-circle" data-src="holder.js/140x140?theme=sky">
+                            <h2>Heading</h2>
+                            <p>Duis mollis, est non commodo condimentum nibh.</p>
+                        </div>
+                        <!-- /.col-lg-4 -->
+                        <div class="col-lg-4">
+                            <img class="img-circle" data-src="holder.js/140x140?theme=sky">
+                            <h2>Heading</h2>
+                            <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget</p>
+                        </div>
+                    </div>
+                    <div class="row arrow-down-section">
+                        <a class="page-scroll btn btn-circle" href="#contact"><i class="arrow-down"></i></a>
+                    </div>
                 </div>
             </section>
             <!-- SKILLS -->
-            <section id="skill" class="nav-section">
-                <div class="row v-align featurette">
+<!--             <section id="skills" class="nav-section">
+                <div class="row v-align">
+                    <div class="col-lg-12 content-section">
+                        <div class="row arrow-down-section">
+                            <a class="page-scroll btn btn-circle" href="#contact"><i class="arrow-down"></i></a>
+                        </div>
+                    </div>
                 </div>
-            </section>
+            </section> -->
             <!-- CONTACTS -->
             <section id="contact" class="nav-section">
                 <div class="row v-align featurette">
@@ -168,23 +212,37 @@
                     </footer>
                 </center>
             </div>
-            </div>
         </div>
-        <!-- script references -->
-        <script type="text/javascript" src="js/vendor/jquery-2.1.4.min.js"></script>
-        <script type="text/javascript" src="js/vendor/bootstrap.min.js"></script>
-        </script>
-        <script>
-        $(window).load(function() {
-            $bg = $("#bg")
-            document.getElementById("links").style.top = ($bg.height() * .85) + 'px';
-        }
-        });
-        </script>
-        <!-- Scrolling Nav JavaScript -->
-        <script src="js/vendor/jquery.easing.min.js"></script>
-        <script src="js/vendor/scrolling-nav.js"></script>
-        <script src="js/vendor/holder.min.js"></script>
+    </div>
+    <!-- script references -->
+    <script type="text/javascript" src="js/vendor/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="js/vendor/bootstrap.min.js"></script>
+    <script>
+    $(".portfolio .content .project").click(function() {
+
+        var index = $(this).data("index");
+        var section_id = "#" + String($(this).data("section"));
+        var child = $(section_id + "-expand-" + index);
+
+        $(".portfolio .expand").hide();
+        $(section_id + " .project").removeClass("active");
+        $(this).addClass("active");
+
+        child.slideDown(800);
+        $.scrollTo(child, 800);
+    });
+    </script>
+    <script>
+    $(window).load(function() {
+        $bg = $("#bg")
+        document.getElementById("links").style.top = ($bg.height() * .85) + 'px';
+    }
+    });
+    </script>
+    <!-- Scrolling Nav JavaScript -->
+    <script src="js/vendor/jquery.easing.min.js"></script>
+    <script src="js/vendor/scrolling-nav.js"></script>
+    <script src="js/vendor/holder.min.js"></script>
 </body>
 
 </html>
