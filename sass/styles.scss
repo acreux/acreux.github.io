@@ -131,10 +131,10 @@ $button-opacity-hover: 0.95;
 
 .nav-section {
     // background: #000 url("../img/background-edu.jpg") no-repeat scroll center bottom;
-    background: white;
+    background: transparent;
     text-align: justify;
     height: 100%;
-    padding-top: 80px;
+    padding-top: 50px;
     color: $button-color;
 }
 
@@ -208,12 +208,24 @@ img {
 }
 
 #project {
-    font-size: 9px;
+    font-size: 11px;
     .col-lg-4 {
         text-align: center;
     }
+    i {
+        @extend .button-hover;
+        color: $button-color;
+    }
     img {
-        height: 140px;
-        width: 140px;
+        height: 130px;
+        width: 130px;
+    }
+    a {
+        img {
+            @extend .button-hover;
+            color: $button-color;
+            height: 40px;
+            width: auto;
+        }
     }
 }
