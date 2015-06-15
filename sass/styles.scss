@@ -1,80 +1,35 @@
 // Import Bootstrap Compass integration
 @import "bootstrap-compass";
-
 // Import custom Bootstrap variables
 @import "bootstrap-variables";
-
 // Import Bootstrap for Sass
 @import "bootstrap";
-
+// font-awesome-compass does not seem to work
 // @import "font-awesome-compass";
 @import "font-awesome";
+@import "compass/css3/border-radius";
+html,
+body {
+    height: 100%;
+}
 
-html, body { height: 100%; }
+body {
+    width: 100%;
+    font-family: 'Open Sans', sans-serif;
+}
 
-$button-color: white;
+$button-color: #5a5a5a;
+$button-start-color: white;
 $button-opacity: 0.5;
 $button-opacity-hover: 0.95;
-
-#bg {
-    left: 0;
-    top: 0;
-}
-
-.bgwidth {
-    width: 100%;
-}
-
-.bgheight {
-    height: 100%;
-}
-
-.buttons {
-    color: $button-color;
-    opacity: $button-opacity;
-    &:hover {
-            opacity: $button-opacity-hover;
-        }
-}
-
-#links {
-    text-align: center;
-    font-size: 30px;
-    // position: absolute;
-    width: 100%;
-    a {
-        @extend .buttons;
-        margin: 26px;
-    }
-}
-
-.arrow-down {
-    @extend .buttons;
-    text-align: center;
-    padding: 50px;
-}
-
-#arrow-enter {
-    bottom: 10px;
-    // position: absolute;
-    left: 50%;
-}
-
-#content {
-    color: black;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 30px;
-    width: 100%;
-    height: 100%;
-}
-
 #intro-container {
-    margin-top: 80px;
+    margin-top: 65px;
+    margin-left: 15px;
     font-size: 15px;
 }
 
 #firstpage {
-    height: 130%;
+    height: 115%;
     width: 100%;
     // padding: 0;
     background: #000 url("../img/background-space.jpg") no-repeat scroll center bottom;
@@ -84,13 +39,7 @@ $button-opacity-hover: 0.95;
 
 .intro-w {
     background: rgba(0, 0, 0, 0.5);
-    -moz-border-radius: 15px;
-    border-radius: 15px;
-}
-
-.v-align {
-    display: flex;
-    align-items: center;
+    @include border-radius(15px);
 }
 
 .profile-pic-container {
@@ -105,15 +54,129 @@ $button-opacity-hover: 0.95;
     margin: 5px;
 }
 
-.nav-section {
-    // background: #eee none repeat scroll 0 0;
-    text-align: justify;
-    display: block;
-    // height: 100%;
-    padding-top: 15px;
+@mixin center-absolute {
+    transform: translate(-50%, 0);
+    left: 50%;
+    position: absolute;
 }
 
-#education #content {
+.v-align {
+    display: flex;
+    align-items: center;
+}
+
+#arrow-enter {
+    @include center-absolute;
+    position: absolute;
+    bottom: 10px;
+}
+
+.button-hover {
+    opacity: $button-opacity;
+    &:hover {
+        opacity: $button-opacity-hover;
+    }
+}
+
+.arrow {
+    @extend .fa-4x;
+    @extend .fa;
+    @extend .fa-arrow-circle-down;
+    @extend .button-hover;
+}
+
+.arrow-down {
+    @extend .arrow;
+    color: $button-color;
+}
+
+.arrow-start {
+    @extend .arrow;
+    color: $button-start-color;
+}
+
+#links {
+    @include center-absolute;
+    background: transparent;
+    bottom: -80px;
+    a {
+        @extend .button-hover;
+        color: $button-start-color;
+        margin: 20px;
+        i {
+            @extend .fa-4x;
+        }
+    }
+}
+
+#content {
+    color: black;
+    font-size: 30px;
+}
+
+.nav-section {
+    // background: #000 url("../img/background-edu.jpg") no-repeat scroll center bottom;
+    background: white;
+    text-align: justify;
+    height: 100%;
+    padding-top: 80px;
+    color: $button-color;
+}
+
+#education,
+#content,
+#sections,
+.content-section {
     height: 100%;
 }
 
+.featurette {
+    text-align: center;
+    div {
+        img {
+            @include border-radius(15px);
+            width: 300px;
+            height: auto;
+            // border: 1px solid black;
+            // margin-top: 0.4em;
+        }
+    }
+}
+
+.education-featurette {
+    @extend .featurette;
+    height: 90/2 *1%;
+}
+
+.experience-featurette {
+    @extend .featurette;
+    height: 90/3 *1%;
+}
+
+.arrow-down-section {
+    height: 10%;
+    text-align: center;
+}
+
+$font-size-feat-h1: 30px;
+.featurette-h1 {
+    font-size: $font-size-feat-h1;
+}
+
+.featurette-h2 {
+    font-size: $font-size-feat-h1 - 5px;
+}
+
+.description-h1 {
+    font-size: $font-size-feat-h1 - 15px;
+}
+
+.description-h2 {
+    font-size: $font-size-feat-h1 - 15px;
+}
+
+img {
+  filter: gray; /* IE6-9 */
+  filter: grayscale(1); /* Firefox 35+ */
+  -webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
+}
