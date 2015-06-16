@@ -13,7 +13,7 @@
 
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
     <!-- Navigation -->
-    <nav class="navbar navbar-default navbar-fixed-top navbar-collapse" role="navigation" id="page-top">
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
         <div class="container">
             <!-- <div class="navbar-header page-scroll">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
@@ -223,21 +223,19 @@
     <script type="text/javascript" src="js/vendor/jquery-2.1.4.min.js"></script>
     <script type="text/javascript" src="js/vendor/bootstrap.min.js"></script>
     <script>
-    $(".portfolio .content .project").click(function() {
-
-        var index = $(this).data("index");
-        var section_id = "#" + String($(this).data("section"));
-        var child = $(section_id + "-expand-" + index);
-
-        $(".portfolio .expand").hide();
-        $(section_id + " .project").removeClass("active");
-        $(this).addClass("active");
-
-        child.slideDown(800);
-        $.scrollTo(child, 800);
+    // Change navbar when reaching
+    $(document).ready(function() {
+        $("nav").affix({
+            offset: {
+                top: function() {
+                    return ($("#sections").offset().top)-2;
+                }
+            }
+        });
     });
     </script>
     <script>
+    // Bug in boostrap in mobile view
     $(document).ready(function() {
         $(".navbar-nav li a").click(function(event) {
             $(".navbar-collapse").collapse('hide');

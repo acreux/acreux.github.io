@@ -18,22 +18,71 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
-$button-color: #5a5a5a;
-$button-start-color: white;
+$grey: #5a5a5a;
+$white: white;
 $button-opacity: 0.5;
-$button-opacity-hover: 0.95;
+$button-opacity-hover: 1;
+$font-size-navbar: 17px;
 #intro-container {
     margin-top: 65px;
     margin-left: 15px;
     font-size: 15px;
 }
 
-nav {
-    font-variant: small-caps;
-    font-size: 17px;
-    li {
+.navbar-default {
+    color: $white;
+    background: transparent;
+    background-image: none;
+    .navbar-collapse {
+        text-align: center;
+    }
+}
+
+.navbar-default .navbar-nav {
+    display: inline-block;
+    float: none;
+    vertical-align: top;
+}
+
+.navbar-default .navbar-nav {
+    > li {
         margin-left: 15px;
         margin-right: 15px;
+        font-variant: small-caps;
+        font-size: $font-size-navbar;
+    }
+}
+
+.navbar-default.affix-top .navbar-nav{
+    > li > a, > .active > a {
+        color: $white;
+        background-color: transparent;
+    }
+}
+
+.navbar-default.affix .navbar-nav{
+    > li > a, > .active > a {
+        color: $grey;
+        background-color: transparent;
+    }
+}
+
+
+.navbar-default.affix-top .navbar-nav, .navbar-default.affix .navbar-nav {
+    > li > a {
+        opacity: $button-opacity;
+        &:hover {
+            opacity: $button-opacity-hover;
+            font-size: $font-size-navbar + 2px;
+            font-weight: bold;
+        }
+    }
+    > .active > a {
+        &, &:hover {
+            opacity: $button-opacity-hover;
+            font-size: $font-size-navbar + 2px;
+            font-weight: bold;
+        }
     }
 }
 
@@ -45,16 +94,13 @@ nav {
     background-size: cover;
     text-align: center;
 }
-
 .intro-w {
     background: rgba(0, 0, 0, 0.5);
     @include border-radius(15px);
 }
-
 .profile-pic-container {
     text-align: center;
 }
-
 .intro-text {
     text-align: center;
     line-height: 1.5;
@@ -62,63 +108,54 @@ nav {
     padding: 15px;
     margin: 5px;
 }
-
 @mixin center-absolute {
     transform: translate(-50%, 0);
     left: 50%;
     position: absolute;
 }
-
 .v-align {
     display: flex;
     align-items: center;
 }
-
 #arrow-enter {
     @include center-absolute;
     position: absolute;
     bottom: 10px;
 }
-
 .button-hover {
     opacity: $button-opacity;
     &:hover {
         opacity: $button-opacity-hover;
     }
 }
-
 .arrow {
     @extend .fa-4x;
     @extend .fa;
     @extend .fa-arrow-circle-down;
     @extend .button-hover;
 }
-
 .arrow-down {
     @extend .arrow;
-    color: $button-color;
+    color: $grey;
     margin-bottom: 95px;
 }
-
 .arrow-start {
     @extend .arrow;
-    color: $button-start-color;
+    color: $white;
 }
-
 #links {
     @include center-absolute;
     background: transparent;
     bottom: -80px;
     a {
         @extend .button-hover;
-        color: $button-start-color;
+        color: $white;
         margin: 20px;
         i {
             @extend .fa-4x;
         }
     }
 }
-
 #projects-bubbles {
     text-align: center;
     background: transparent;
@@ -127,33 +164,25 @@ nav {
         border: 1px solid #021a40;
         i {
             @extend .button-hover;
-            color: $button-color;
+            color: $grey;
             @extend .fa-4x;
         }
     }
 }
-
-#content {
-    color: black;
-    font-size: 30px;
-}
-
 .nav-section {
     // background: #000 url("../img/background-edu.jpg") no-repeat scroll center bottom;
     background: transparent;
     text-align: justify;
     height: 100%;
     padding-top: 50px;
-    color: $button-color;
+    color: $grey;
 }
-
 #education,
 #content,
 #sections,
 .content-section {
     height: 100%;
 }
-
 .featurette {
     text-align: center;
     div {
@@ -166,40 +195,32 @@ nav {
         }
     }
 }
-
 .education-featurette {
     @extend .featurette;
     height: 90/2 *1%;
 }
-
 .experience-featurette {
     @extend .featurette;
     height: 90/3 *1%;
 }
-
 .arrow-down-section {
     height: 10%;
     text-align: center;
     margin: -10px;
 }
-
 $font-size-feat-h1: 30px;
 .featurette-h1 {
     font-size: $font-size-feat-h1;
 }
-
 .featurette-h2 {
     font-size: $font-size-feat-h1 - 5px;
 }
-
 .description-h1 {
     font-size: $font-size-feat-h1 - 15px;
 }
-
 .description-h2 {
     font-size: $font-size-feat-h1 - 15px;
 }
-
 img {
     filter: gray;
     /* IE6-9 */
@@ -210,41 +231,32 @@ img {
     -webkit-filter: grayscale(1);
     /* Google Chrome, Safari 6+ & Opera 15+ */
 }
-
 #project-bubbles,
 #skill-bubbles {
     height: 90/2 * 1%;
 }
-
 #project {
     font-size: 11px;
     .col-lg-4 {
         text-align: center;
     }
+    
     i {
         @extend .button-hover;
-        color: $button-color;
+        color: $grey;
     }
+    
     img {
         height: 130px;
         width: 130px;
     }
+    
     a {
         img {
             @extend .button-hover;
-            color: $button-color;
+            color: $grey;
             height: 40px;
             width: auto;
         }
     }
-}
-
-.navbar .navbar-nav {
-    display: inline-block;
-    float: none;
-    vertical-align: top;
-}
-
-.navbar .navbar-collapse {
-    text-align: center;
 }
