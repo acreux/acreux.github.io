@@ -53,22 +53,22 @@ $font-size-navbar: 17px;
     }
 }
 
-.navbar-default.affix-top .navbar-nav{
+.navbar-default.affix-top .navbar-nav {
     > li > a, > .active > a {
         color: $white;
         background-color: transparent;
     }
 }
 
-.navbar-default.affix .navbar-nav{
+.navbar-default.affix .navbar-nav {
     > li > a, > .active > a {
         color: $grey;
         background-color: transparent;
     }
 }
 
-
-.navbar-default.affix-top .navbar-nav, .navbar-default.affix .navbar-nav {
+.navbar-default.affix-top .navbar-nav,
+.navbar-default.affix .navbar-nav {
     > li > a {
         opacity: $button-opacity;
         &:hover {
@@ -94,13 +94,16 @@ $font-size-navbar: 17px;
     background-size: cover;
     text-align: center;
 }
+
 .intro-w {
     background: rgba(0, 0, 0, 0.5);
     @include border-radius(15px);
 }
+
 .profile-pic-container {
     text-align: center;
 }
+
 .intro-text {
     text-align: center;
     line-height: 1.5;
@@ -108,41 +111,49 @@ $font-size-navbar: 17px;
     padding: 15px;
     margin: 5px;
 }
+
 @mixin center-absolute {
     transform: translate(-50%, 0);
     left: 50%;
     position: absolute;
 }
+
 .v-align {
     display: flex;
     align-items: center;
 }
+
 #arrow-enter {
     @include center-absolute;
     position: absolute;
     bottom: 10px;
 }
+
 .button-hover {
     opacity: $button-opacity;
     &:hover {
         opacity: $button-opacity-hover;
     }
 }
+
 .arrow {
     @extend .fa-4x;
     @extend .fa;
     @extend .fa-arrow-circle-down;
     @extend .button-hover;
 }
+
 .arrow-down {
     @extend .arrow;
     color: $grey;
     margin-bottom: 95px;
 }
+
 .arrow-start {
     @extend .arrow;
     color: $white;
 }
+
 #links {
     @include center-absolute;
     background: transparent;
@@ -156,19 +167,12 @@ $font-size-navbar: 17px;
         }
     }
 }
+
 #projects-bubbles {
     text-align: center;
     background: transparent;
-    span {
-        @include border-radius(50%, 50%);
-        border: 1px solid #021a40;
-        i {
-            @extend .button-hover;
-            color: $grey;
-            @extend .fa-4x;
-        }
-    }
 }
+
 .nav-section {
     // background: #000 url("../img/background-edu.jpg") no-repeat scroll center bottom;
     background: transparent;
@@ -177,12 +181,15 @@ $font-size-navbar: 17px;
     padding-top: 50px;
     color: $grey;
 }
+
 #education,
 #content,
 #sections,
-.content-section {
+.content-section,
+#project {
     height: 100%;
 }
+
 .featurette {
     text-align: center;
     div {
@@ -195,32 +202,40 @@ $font-size-navbar: 17px;
         }
     }
 }
+
 .education-featurette {
     @extend .featurette;
     height: 90/2 *1%;
 }
+
 .experience-featurette {
     @extend .featurette;
     height: 90/3 *1%;
 }
+
 .arrow-down-section {
     height: 10%;
     text-align: center;
     margin: -10px;
 }
+
 $font-size-feat-h1: 30px;
 .featurette-h1 {
     font-size: $font-size-feat-h1;
 }
+
 .featurette-h2 {
     font-size: $font-size-feat-h1 - 5px;
 }
+
 .description-h1 {
     font-size: $font-size-feat-h1 - 15px;
 }
+
 .description-h2 {
     font-size: $font-size-feat-h1 - 15px;
 }
+
 img {
     filter: gray;
     /* IE6-9 */
@@ -231,26 +246,29 @@ img {
     -webkit-filter: grayscale(1);
     /* Google Chrome, Safari 6+ & Opera 15+ */
 }
-#project-bubbles,
-#skill-bubbles {
+
+.tech-featurette {
     height: 90/2 * 1%;
 }
+
+#project-featurette div {
+    background-color: green;
+    margin-top: 20px;
+}
+
 #project {
     font-size: 11px;
     .col-lg-4 {
         text-align: center;
     }
-    
     i {
         @extend .button-hover;
         color: $grey;
     }
-    
     img {
         height: 130px;
         width: 130px;
     }
-    
     a {
         img {
             @extend .button-hover;
@@ -259,4 +277,20 @@ img {
             width: auto;
         }
     }
+}
+
+// .item {
+//     border: 2px solid #fff !important;
+// }
+.item {
+    text-align: center;
+    border: 2px solid #1e1f20;
+    border-radius: 50%;
+    margin: 15px;
+    // line-height: 500px;
+}
+
+#skills-container {
+    padding: 50px;
+    // margin-bottom: 30px;
 }

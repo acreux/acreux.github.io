@@ -8,6 +8,7 @@
     <link rel="shortcut icon" href="img/icons/favicon-space-shuttle.ico" type="image/x-icon" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/jquery.slick/1.5.0/slick.css" />
     <link href="stylesheets/styles.css" rel="stylesheet">
 </head>
 
@@ -145,7 +146,7 @@
             <!-- PROJECTS -->
             <section id="project" class="nav-section">
                 <div class="col-lg-12 content-section">
-                    <div id="project-bubbles" class="row">
+                    <div id="project-featurette" class="row tech-featurette" style="background:red">
                         <div class="col-lg-4">
                             <img class="img-circle" data-src="holder.js/140x140?theme=sky" src="img/smartconsult.jpg">
                             <h2>SmartConsult</h2>
@@ -168,23 +169,35 @@
                             <p><a href="http://github.com/acreux/nus-cs5223-maze"><i class="fa fa-3x fa-github-alt"></i></a></p>
                         </div>
                     </div>
-                    <div id="skill-bubbles" class="row">
-                        <div class="col-lg-4">
-                            <img class="img-circle" data-src="holder.js/140x140?theme=sky" src="img/smartconsult.jpg">
-                            <h2>Heading</h2>
-                            <p>Donec sed odio dui. Etiam m malesuada magna mollis euismod. Nullam id dolor </p>
-                        </div>
-                        <!-- /.col-lg-4 -->
-                        <div class="col-lg-4">
-                            <img class="img-circle" data-src="holder.js/140x140?theme=sky">
-                            <h2>Heading</h2>
-                            <p>Duis mollis, est non commodo condimentum nibh.</p>
-                        </div>
-                        <!-- /.col-lg-4 -->
-                        <div class="col-lg-4">
-                            <img class="img-circle" data-src="holder.js/140x140?theme=sky">
-                            <h2>Heading</h2>
-                            <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget</p>
+                    <div class="row tech-featurette" style="background:orange">
+                        <div id="skills-container" class="col-lg-12" style="background:green">
+                            <div id="skills" class="row" style="background:white">
+                                <div class="item">content1</div>
+                                <div class="item">
+                                    your content2</div>
+                                <div class="item">
+                                    your content3</div>
+                                <div class="item">
+                                    your content4</div>
+                                <div class="item">
+                                    your content5</div>
+                                <div class="item">
+                                    your content6</div>
+                                <div class="item">
+                                    your content7</div>
+                                <div class="item">
+                                    your content8</div>
+                                <div class="item">
+                                    your content9</div>
+                            </div>
+                            <div class="row text-center">
+                                <div id="slick-prev" class="col-xs-1 col-xs-offset-4" style="background:red">
+                                    <i class="fa-4x fa fa-arrow-circle-o-left"></i>
+                                </div>
+                                <div id="slick-next" class="col-xs-offset-2 col-xs-1" style="background:blue">
+                                    <i class="fa-4x  fa fa-arrow-circle-o-right"></i>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="row arrow-down-section">
@@ -203,9 +216,14 @@
                 </div>
             </section> -->
             <!-- CONTACTS -->
-            <section id="contact" class="nav-section">
-                <div class="row v-align featurette">
-                </div>
+            <section id="contact" class="nav-section" style="background:red">
+                <!--  <div class="row v-align featurette">
+                    <div class="your-class">
+                        <div>your xwedew</div>
+                        <div>your content</div>
+                       <div>your contececrnt</div>
+                    </div>
+                </div> -->
             </section>
             <!-- /.container -->
             <!-- FOOTER -->
@@ -228,7 +246,7 @@
         $("nav").affix({
             offset: {
                 top: function() {
-                    return ($("#sections").offset().top)-2;
+                    return ($("#sections").offset().top) - 2;
                 }
             }
         });
@@ -242,17 +260,32 @@
         });
     });
     </script>
-    <script>
-    $(window).load(function() {
-        $bg = $("#bg")
-        document.getElementById("links").style.top = ($bg.height() * .85) + 'px';
-    }
-    });
-    </script>
     <!-- Scrolling Nav JavaScript -->
     <script src="js/vendor/jquery.easing.min.js"></script>
     <script src="js/vendor/scrolling-nav.js"></script>
     <script src="js/vendor/holder.min.js"></script>
+    <script type="text/javascript" src="js/vendor/slick.min.js"></script>
+    <script>
+    $(document).ready(function() {
+        $('#skills').slick({
+            infinite: true,
+            autoplay: true,
+            slidesToShow: 4,
+            // slidesToScroll: 4,
+            prevArrow: "#slick-prev",
+            nextArrow: "#slick-next"
+        });
+    });
+    </script>
+    <script>
+    $(document).ready(function() {
+        $('.item').each(
+            function() {
+                $(this).height($(this).width());
+                $(this).css("line-height", $(this).width() / 11);
+            })
+    });
+    </script>
 </body>
 
 </html>
