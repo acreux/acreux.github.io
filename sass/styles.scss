@@ -145,22 +145,27 @@ $font-size-navbar: 17px;
 
 .arrow-down {
     @extend .arrow;
-    color: $grey;
     margin-bottom: 95px;
 }
 
-.arrow-start {
-    @extend .arrow;
-    color: $white;
+.grey {
+    color: $grey;
 }
 
 #links {
     @include center-absolute;
-    background: transparent;
     bottom: -80px;
+    background: transparent;
+}
+
+.white {
+    color: $white;
+}
+
+.button-link {
     a {
         @extend .button-hover;
-        color: $white;
+        @extend .white;
         margin: 20px;
         i {
             @extend .fa-4x;
@@ -179,7 +184,7 @@ $font-size-navbar: 17px;
     text-align: justify;
     height: 100%;
     padding-top: 50px;
-    color: $grey;
+    @extend .grey;
 }
 
 #education,
