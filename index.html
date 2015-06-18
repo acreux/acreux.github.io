@@ -59,7 +59,7 @@
             </div>
         </div>
     </div>
-    <div id="links" class="button-link white">
+    <div id="links" class="button-link-about">
         <span><a target="_blank" href="https://www.linkedin.com/in/antoinecreux">
             <i class="fa fa-linkedin"></i></a></span>
         <span><a target="_blank" href="https://www.github.com/acreux">
@@ -168,7 +168,7 @@
                     </div>
                     <div class="row tech-featurette">
                         <div id="skills-container" class="col-lg-12">
-                            <div id="skills" class="row" style="background:white">
+                            <div id="skills" class="row">
                                 <div>
                                     <div>Python</div>
                                 </div>
@@ -234,82 +234,109 @@
                 </div>
             </section>
             <!-- CONTACTS -->
-            <section id="contact" class="nav-section" style="background:red">
-                <div class="col-lg-12 content-section">
-                    <div class="row">
-                        <div id="links-contact" class="button-link white">
-                            <span><a target="_blank" href="https://www.linkedin.com/in/antoinecreux"><i class="fa fa-linkedin"></i></a></span>
-                            <span><a target="_blank" href="https://www.github.com/acreux"><i class="fa fa-github-alt"></i></a></span>
-                            <span><a target="_blank" href="mailto:antoine.creux@gmail.com"><i class="fa fa-envelope-o"></i></a></span>
-                            <span><a target="_blank" href="https://www.twitter.com/creuxa"><i class="fa fa-twitter"></i></a></span>
+            <section id="contact" class="nav-section">
+                <div class="col-lg-12 contact-section">
+                    <div class="row row-contact">
+                        <div class="col-lg-12">
+                            <div class="fun">
+                                <h3><i class="fa-5x fa fa-beer"></i></h3>
+                                <h3><i class="fa-5x fa fa-video-camera"></i></h3>
+                                <h3><i class="fa-5x fa fa-bicycle"></i></h3>
+                                <h3><i class="fa-5x fa fa-picture-o"></i></h3>
+                                <h3><i class="fa-5x fa  fa-space-shuttle"></i></h3>
+                                <h3><i class="fa-5x fa fa-ship"></i></h3>
+                                <h3><i class="fa-5x fa fa-cutlery"></i></h3>
+                                <h3><i class="fa-5x fa fa-futbol-o"></i></h3>
+                                <h3><i class="fa-5x fa fa-globe"></i></h3>
+                                <h3><i class="fa-5x fa fa-music"></i></h3>
+                                <h3><i class="fa-5x fa fa-glass"></i></h3>
+                                <h3><i class="fa-5x fa fa-headphones"></i></h3>
+                                <h3><i class="fa-5x fa fa-coffee"></i></h3>
+                                <h3><i class="fa-5x fa fa-plane"></i></h3>
+                            </div>
+                            <h1>Let's get in touch <i class="fa fa-paper-plane"></i></h1>
+                            <div id="links-contact" class="button-link-about col-lg-12 text-center">
+                                <span><a target="_blank" href="https://www.linkedin.com/in/antoinecreux"><i class="fa fa-linkedin"></i></a></span>
+                                <span><a target="_blank" href="https://www.github.com/acreux"><i class="fa fa-github-alt"></i></a></span>
+                                <span><a target="_blank" href="mailto:antoine.creux@gmail.com"><i class="fa fa-envelope-o"></i></a></span>
+                                <span><a target="_blank" href="https://www.twitter.com/creuxa"><i class="fa fa-twitter"></i></a></span>
+                            </div>
                         </div>
-                    </div </div>
+                    </div>
+                </div>
             </section>
             <!-- /.container -->
             <!-- FOOTER -->
             <div class="row">
                 <center>
                     <footer>
-                        <p class="pull-right"><a href="#">Back to top</a></p>
+                    <!-- <p class="pull-right"><a class="page-scroll" href="#page-top"><i class="fa fa-arrow-circle-o-up fa-3x"></i>Back to top</a></p> -->
+                    <p class="pull-right"><a class="page-scroll" href="#page-top"><i class="fa fa-home fa-3x"></i></a></p>
                         <p>© Created by Antoine Creux</p>
                     </footer>
                 </center>
             </div>
-            </div>
         </div>
-        <!-- script references -->
-        <script type="text/javascript" src="js/vendor/jquery-2.1.4.min.js"></script>
-        <script type="text/javascript" src="js/vendor/bootstrap.min.js"></script>
-        <script>
-        // Change navbar when reaching
-        $(document).ready(function() {
-            $("nav").affix({
-                offset: {
-                    top: function() {
-                        return ($("#sections").offset().top) - 2;
-                    }
+    </div>
+    <!-- script references -->
+    <script type="text/javascript" src="js/vendor/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="js/vendor/bootstrap.min.js"></script>
+    <script>
+    // Change navbar when reaching
+    $(document).ready(function() {
+        $("nav").affix({
+            offset: {
+                top: function() {
+                    return ($("#sections").offset().top) - 2;
                 }
-            });
+            }
         });
-        </script>
-        <script>
-        // Bug in boostrap in mobile view
-        $(document).ready(function() {
-            $(".navbar-nav li a").click(function(event) {
-                $(".navbar-collapse").collapse('hide');
-            });
+    });
+    </script>
+    <script>
+    // Bug in boostrap in mobile view
+    $(document).ready(function() {
+        $(".navbar-nav li a").click(function(event) {
+            $(".navbar-collapse").collapse('hide');
         });
-        </script>
-        <!-- Scrolling Nav JavaScript -->
-        <script src="js/vendor/jquery.easing.min.js"></script>
-        <script src="js/vendor/scrolling-nav.js"></script>
-        <script src="js/vendor/holder.min.js"></script>
-        <script type="text/javascript" src="js/vendor/slick.min.js"></script>
-        <script>
-        $(document).ready(function() {
-            $('#skills').slick({
-                infinite: true,
-                autoplay: true,
-                slidesToShow: 4,
-                slidesToScroll: 4,
-                prevArrow: "#slick-prev",
-                nextArrow: "#slick-next",
-                dots: true,
-                infinite: true,
-                speed: 1500,
-            });
+    });
+    </script>
+    <!-- Scrolling Nav JavaScript -->
+    <script src="js/vendor/jquery.easing.min.js"></script>
+    <script src="js/vendor/scrolling-nav.js"></script>
+    <script src="js/vendor/holder.min.js"></script>
+    <script type="text/javascript" src="js/vendor/slick.min.js"></script>
+    <script>
+    $(document).ready(function() {
+        $('#skills').slick({
+            infinite: true,
+            autoplay: true,
+            slidesToShow: 4,
+            slidesToScroll: 4,
+            prevArrow: "#slick-prev",
+            nextArrow: "#slick-next",
+            dots: true,
+            speed: 1500,
         });
-        </script>
-        <script>
-        $(document).ready(function() {
-            $('.slick-slide').each(
-                function() {
-                    $(this).height($(this).width());
-                    // $(this).children().css("line-height", $(this).width());
-                    // $(this).css("line-height", $(this).width());
-                })
+        $('.fun').slick({
+            infinite: true,
+            autoplay: true,
+            arrows: false,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            speed: 2000,
+            autoplaySpeed: 1000,
         });
-        </script>
+    });
+    </script>
+    <script>
+    $(document).ready(function() {
+        $('skills.slick-slide').each(
+            function() {
+                $(this).height($(this).width());
+            })
+    });
+    </script>
 </body>
 
 </html>

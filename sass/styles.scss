@@ -162,7 +162,7 @@ $font-size-navbar: 17px;
     color: $white;
 }
 
-.button-link {
+.button-link-contact {
     a {
         @extend .button-hover;
         @extend .white;
@@ -172,6 +172,19 @@ $font-size-navbar: 17px;
         }
     }
 }
+
+.button-link-about {
+    a {
+        @extend .button-hover;
+        @extend .grey;
+        margin: 60px;
+        i {
+            @extend .fa-4x;
+        }
+    }
+}
+
+
 
 #projects-bubbles {
     text-align: center;
@@ -285,7 +298,7 @@ img {
     }
 }
 
-.slick-slide {
+#skills.slick-slide {
     position: relative;
     // padding: 100px 100px;
     margin: 15px;
@@ -326,7 +339,6 @@ img {
 $slick-font-path: "./fonts/" !default;
 $slick-font-family: "slick" !default;
 $slick-loader-path: "./" !default;
-$slick-arrow-color: white !default;
 $slick-dot-color: black !default;
 $slick-dot-color-active: $slick-dot-color !default;
 $slick-prev-character: "←" !default;
@@ -336,7 +348,7 @@ $slick-dot-size: 6px !default;
 $slick-opacity-default: 0.75 !default;
 $slick-opacity-on-hover: 1 !default;
 $slick-opacity-not-active: 0.25 !default;
-.slick-dots {
+#skills .slick-dots {
     position: absolute;
     bottom: -45px;
     list-style: none;
@@ -346,7 +358,7 @@ $slick-opacity-not-active: 0.25 !default;
     width: 100%;
     li {
         position: relative;
-    // background-color: blue;
+        // background-color: blue;
         display: inline-block;
         height: 20px;
         width: 20px;
@@ -393,4 +405,27 @@ $slick-opacity-not-active: 0.25 !default;
             opacity: $slick-opacity-default;
         }
     }
+}
+
+#contact.contact-section {
+    margin-top: 10px;
+    display: table;
+    height: 100%;
+}
+
+.fun {
+    margin-top: 180px;
+    margin-bottom: 90px;
+
+}
+.contact-section {
+    display: table-cell;
+    max-width: 980px;
+    // height: 100%;
+    vertical-align:middle;
+    text-align: center;
+}
+
+.row-contact h1 {
+    margin-bottom: 50px;
 }
