@@ -209,11 +209,8 @@ $font-size-navbar: 17px;
     text-align: center;
     div {
         img {
-            // @include border-radius(15px);
             width: 300px;
             height: auto;
-            // border: 1px solid black;
-            // margin-top: 0.4em;
         }
     }
 }
@@ -274,7 +271,7 @@ img {
 }
 
 #project-featurette {
-    font-size: 11px;
+    font-size: 15px;
     .col-lg-4 {
         text-align: center;
     }
@@ -298,7 +295,6 @@ img {
 
 #skills .slick-slide {
     position: relative;
-    // padding: 100px 100px;
     margin: 15px;
     text-align: center;
     div {
@@ -306,30 +302,16 @@ img {
         left: 50%;
         transform: translate(-50%, -50%);
         position: absolute;
-        // text-align: center;
     }
-    // text-align: center;
     @include border-radius(50%);
     border: 2px solid $grey;
-    // text-align: center;
-    // border: 2px solid #1e1f20;
-    // border-radius: 50%;
-    // margin-top: 15px;
-    // margin-bottom: 15px;
-    // margin-left: 25px;
-    // margin-right: 25px;
-    // i{
-    //     line-height: 138px;
-    // }
-    // line-height: 500px;
-    // padding-left: 10px;
-    // padding-right: 10px;
-    // padding-right: 10px;
 }
 
 #skills-container {
-    padding-left: 100px;
-    padding-right: 100px;
+    padding: 10px 100px;
+    padding-top: 50px;
+    font-size: 18px;
+    font-weight: bold;
 }
 
 $slick-font-path: "./fonts/" !default;
