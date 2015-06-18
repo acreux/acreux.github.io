@@ -157,9 +157,6 @@
                             <img class="img-circle" data-src="holder.js/140x140?theme=sky" src="img/piano.jpg">
                             <h2>The Pianocktail</h2>
                             <p>Built and sold a piano which pours a drink based on the mood of the music played</p>
-                            <p>
-                                <a href="https://en.wikipedia.org/wiki/Froth_on_the_Daydream#Plot"><img src="img/wikipedia.png"></a>
-                            </p>
                         </div>
                         <!-- /.col-lg-4 -->
                         <div class="col-lg-4">
@@ -172,23 +169,13 @@
                     <div class="row tech-featurette" style="background:orange">
                         <div id="skills-container" class="col-lg-12" style="background:green">
                             <div id="skills" class="row" style="background:white">
-                                <div class="item">content1</div>
-                                <div class="item">
-                                    your content2</div>
-                                <div class="item">
-                                    your content3</div>
-                                <div class="item">
-                                    your content4</div>
-                                <div class="item">
-                                    your content5</div>
-                                <div class="item">
-                                    your content6</div>
-                                <div class="item">
-                                    your content7</div>
-                                <div class="item">
-                                    your content8</div>
-                                <div class="item">
-                                    your content9</div>
+                                <div><div>Python</div></div>
+                                <div><div>HTML</div></div>
+                                <div><div>CSS</div></div>
+                                <div><div>Java</div></div>
+                                <div><div>Django</div></div>
+                                <div><div>Scala</div></div>
+                                <div><div>scikit-learn</div></div>
                             </div>
                             <div class="row text-center">
                                 <div id="slick-prev" class="col-xs-1 col-xs-offset-4" style="background:red">
@@ -207,18 +194,15 @@
             </section>
             <!-- CONTACTS -->
             <section id="contact" class="nav-section" style="background:red">
-                <div class="row">
-                    <div id="links-contact" class="button-link white">
-                        <span><a target="_blank" href="https://www.linkedin.com/in/antoinecreux">
-            <i class="fa fa-linkedin"></i></a></span>
-                        <span><a target="_blank" href="https://www.github.com/acreux">
-            <i class="fa fa-github-alt"></i></a></span>
-                        <span><a target="_blank" href="mailto:antoine.creux@gmail.com"><i class="fa fa-envelope-o"></i></a></span>
-                        <span><a target="_blank" href="https://www.twitter.com/creuxa">
-            <i class="fa fa-twitter"></i>
-            </a></span>
-                    </div>
-                </div>
+                <div class="col-lg-12 content-section">
+                    <div class="row">
+                        <div id="links-contact" class="button-link white">
+                            <span><a target="_blank" href="https://www.linkedin.com/in/antoinecreux"><i class="fa fa-linkedin"></i></a></span>
+                            <span><a target="_blank" href="https://www.github.com/acreux"><i class="fa fa-github-alt"></i></a></span>
+                            <span><a target="_blank" href="mailto:antoine.creux@gmail.com"><i class="fa fa-envelope-o"></i></a></span>
+                            <span><a target="_blank" href="https://www.twitter.com/creuxa"><i class="fa fa-twitter"></i></a></span>
+                        </div>
+                    </div </div>
             </section>
             <!-- /.container -->
             <!-- FOOTER -->
@@ -230,57 +214,58 @@
                     </footer>
                 </center>
             </div>
+            </div>
         </div>
-    </div>
-    <!-- script references -->
-    <script type="text/javascript" src="js/vendor/jquery-2.1.4.min.js"></script>
-    <script type="text/javascript" src="js/vendor/bootstrap.min.js"></script>
-    <script>
-    // Change navbar when reaching
-    $(document).ready(function() {
-        $("nav").affix({
-            offset: {
-                top: function() {
-                    return ($("#sections").offset().top) - 2;
+        <!-- script references -->
+        <script type="text/javascript" src="js/vendor/jquery-2.1.4.min.js"></script>
+        <script type="text/javascript" src="js/vendor/bootstrap.min.js"></script>
+        <script>
+        // Change navbar when reaching
+        $(document).ready(function() {
+            $("nav").affix({
+                offset: {
+                    top: function() {
+                        return ($("#sections").offset().top) - 2;
+                    }
                 }
-            }
+            });
         });
-    });
-    </script>
-    <script>
-    // Bug in boostrap in mobile view
-    $(document).ready(function() {
-        $(".navbar-nav li a").click(function(event) {
-            $(".navbar-collapse").collapse('hide');
+        </script>
+        <script>
+        // Bug in boostrap in mobile view
+        $(document).ready(function() {
+            $(".navbar-nav li a").click(function(event) {
+                $(".navbar-collapse").collapse('hide');
+            });
         });
-    });
-    </script>
-    <!-- Scrolling Nav JavaScript -->
-    <script src="js/vendor/jquery.easing.min.js"></script>
-    <script src="js/vendor/scrolling-nav.js"></script>
-    <script src="js/vendor/holder.min.js"></script>
-    <script type="text/javascript" src="js/vendor/slick.min.js"></script>
-    <script>
-    $(document).ready(function() {
-        $('#skills').slick({
-            infinite: true,
-            autoplay: true,
-            slidesToShow: 4,
-            // slidesToScroll: 4,
-            prevArrow: "#slick-prev",
-            nextArrow: "#slick-next"
+        </script>
+        <!-- Scrolling Nav JavaScript -->
+        <script src="js/vendor/jquery.easing.min.js"></script>
+        <script src="js/vendor/scrolling-nav.js"></script>
+        <script src="js/vendor/holder.min.js"></script>
+        <script type="text/javascript" src="js/vendor/slick.min.js"></script>
+        <script>
+        $(document).ready(function() {
+            $('#skills').slick({
+                infinite: true,
+                // autoplay: true,
+                slidesToShow: 4,
+                slidesToScroll: 4,
+                prevArrow: "#slick-prev",
+                nextArrow: "#slick-next"
+            });
         });
-    });
-    </script>
-    <script>
-    $(document).ready(function() {
-        $('.item').each(
-            function() {
-                $(this).height($(this).width());
-                $(this).css("line-height", $(this).width() / 11);
-            })
-    });
-    </script>
+        </script>
+        <script>
+        $(document).ready(function() {
+            $('.slick-slide').each(
+                function() {
+                    $(this).height($(this).width());
+                    // $(this).children().css("line-height", $(this).width());
+                    // $(this).css("line-height", $(this).width());
+                })
+        });
+        </script>
 </body>
 
 </html>

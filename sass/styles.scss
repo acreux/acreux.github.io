@@ -190,8 +190,7 @@ $font-size-navbar: 17px;
 #education,
 #content,
 #sections,
-.content-section,
-#project {
+.content-section {
     height: 100%;
 }
 
@@ -261,7 +260,7 @@ img {
     margin-top: 20px;
 }
 
-#project {
+#project-featurette {
     font-size: 11px;
     .col-lg-4 {
         text-align: center;
@@ -278,24 +277,46 @@ img {
         img {
             @extend .button-hover;
             color: $grey;
-            height: 40px;
-            width: auto;
+            height: 30px;
+            width: 30px;
         }
     }
 }
 
-// .item {
-//     border: 2px solid #fff !important;
-// }
-.item {
-    text-align: center;
-    border: 2px solid #1e1f20;
-    border-radius: 50%;
+.slick-slide {
+    position: relative;
+    // padding: 100px 100px;
     margin: 15px;
+    text-align: center;
+    div {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        position: absolute;
+        // text-align: center;
+    }
+    // text-align: center;
+    @include border-radius(50%);
+    border: 2px solid $grey;
+    // text-align: center;
+    // border: 2px solid #1e1f20;
+    // border-radius: 50%;
+    // margin-top: 15px;
+    // margin-bottom: 15px;
+    // margin-left: 25px;
+    // margin-right: 25px;
+    // i{
+    //     line-height: 138px;
+    // }
     // line-height: 500px;
+    // padding-left: 10px;
+    // padding-right: 10px;
+    // padding-right: 10px;
 }
 
 #skills-container {
-    padding: 50px;
+    padding-left: 100px;
+    padding-right: 100px;
+    // padding-top: 10px;
     // margin-bottom: 30px;
 }
