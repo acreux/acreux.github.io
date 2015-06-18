@@ -165,8 +165,8 @@ $font-size-navbar: 17px;
 .button-link-contact {
     a {
         @extend .button-hover;
-        @extend .white;
-        margin: 20px;
+        @extend .grey;
+        margin: 60px;
         i {
             @extend .fa-4x;
         }
@@ -176,15 +176,13 @@ $font-size-navbar: 17px;
 .button-link-about {
     a {
         @extend .button-hover;
-        @extend .grey;
+        @extend .white;
         margin: 60px;
         i {
             @extend .fa-4x;
         }
     }
 }
-
-
 
 #projects-bubbles {
     text-align: center;
@@ -414,13 +412,13 @@ $slick-opacity-not-active: 0.25 !default;
 .fun {
     margin-top: 180px;
     margin-bottom: 90px;
-
 }
+
 .contact-section {
     display: table-cell;
     max-width: 980px;
     // height: 100%;
-    vertical-align:middle;
+    vertical-align: middle;
     text-align: center;
 }
 

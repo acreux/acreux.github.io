@@ -255,7 +255,7 @@
                                 <h3><i class="fa-5x fa fa-plane"></i></h3>
                             </div>
                             <h1>Let's get in touch <i class="fa fa-paper-plane"></i></h1>
-                            <div id="links-contact" class="button-link-about col-lg-12 text-center">
+                            <div id="links-contact" class="button-link-contact col-lg-12 text-center">
                                 <span><a target="_blank" href="https://www.linkedin.com/in/antoinecreux"><i class="fa fa-linkedin"></i></a></span>
                                 <span><a target="_blank" href="https://www.github.com/acreux"><i class="fa fa-github-alt"></i></a></span>
                                 <span><a target="_blank" href="mailto:antoine.creux@gmail.com"><i class="fa fa-envelope-o"></i></a></span>
@@ -270,7 +270,7 @@
             <div class="row">
                 <center>
                     <footer>
-                    <p class="pull-right"><a class="page-scroll" href="#page-top"><i class="fa fa-home fa-3x"></i></a></p>
+                        <p class="pull-right"><a class="page-scroll" href="#page-top"><i class="fa fa-home fa-3x"></i></a></p>
                         <p>© Created by Antoine Creux</p>
                     </footer>
                 </center>
@@ -315,16 +315,19 @@
             prevArrow: "#slick-prev",
             nextArrow: "#slick-next",
             dots: true,
-            speed: 1500,
+            speed: 2000,
+            speed: 1000,
+            pauseOnHover: false,
         });
         $('.fun').slick({
+            accessibility: false,
+            arrows: false,
             infinite: true,
             autoplay: true,
-            arrows: false,
-            slidesToShow: 1,
-            slidesToScroll: 1,
+            draggable: false,
             speed: 2000,
             autoplaySpeed: 1000,
+            pauseOnHover: false,
         });
     });
     </script>
