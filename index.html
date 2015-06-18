@@ -99,7 +99,7 @@
                         </div>
                     </div>
                     <div class="row arrow-down-section">
-                        <a class="page-scroll btn btn-circle" href="#experience"><i class="arrow-down"></i></a>
+                        <a class="page-scroll btn btn-circle" href="#experience"><i class="arrow"></i></a>
                     </div>
                 </div>
             </section>
@@ -139,14 +139,14 @@
                         </div>
                     </div>
                     <div class="row arrow-down-section">
-                        <a class="page-scroll btn btn-circle" href="#project"><i class="arrow-down"></i></a>
+                        <a class="page-scroll btn btn-circle" href="#project"><i class="arrow"></i></a>
                     </div>
                 </div>
             </section>
             <!-- PROJECTS SKILLS -->
             <section id="project" class="nav-section">
                 <div class="col-lg-12 content-section">
-                    <div id="project-featurette" class="row tech-featurette" style="background:red">
+                    <div id="project-featurette" class="row tech-featurette">
                         <div class="col-lg-4">
                             <img class="img-circle" data-src="holder.js/140x140?theme=sky" src="img/smartconsult.jpg">
                             <h2>SmartConsult</h2>
@@ -166,29 +166,70 @@
                             <p><a href="http://github.com/acreux/nus-cs5223-maze"><i class="fa fa-3x fa-github-alt"></i></a></p>
                         </div>
                     </div>
-                    <div class="row tech-featurette" style="background:orange">
-                        <div id="skills-container" class="col-lg-12" style="background:green">
+                    <div class="row tech-featurette">
+                        <div id="skills-container" class="col-lg-12">
                             <div id="skills" class="row" style="background:white">
-                                <div><div>Python</div></div>
-                                <div><div>HTML</div></div>
-                                <div><div>CSS</div></div>
-                                <div><div>Java</div></div>
-                                <div><div>Django</div></div>
-                                <div><div>Scala</div></div>
-                                <div><div>scikit-learn</div></div>
+                                <div>
+                                    <div>Python</div>
+                                </div>
+                                <div>
+                                    <div>Django</div>
+                                </div>
+                                <div>
+                                    <div>scikit-learn</div>
+                                </div>
+                                <div>
+                                    <div>pandas</div>
+                                </div>
+                                <div>
+                                    <div>ArchLinux</div>
+                                </div>
+                                <div>
+                                    <div>Git</div>
+                                </div>
+                                <div>
+                                    <div>SQL</div>
+                                </div>
+                                <div>
+                                    <div>Bash</div>
+                                </div>
+                                <div>
+                                    <div>OCaml</div>
+                                </div>
+                                <div>
+                                    <div>Java</br>Scala</br>Android</div>
+                                </div>
+                                <div>
+                                    <div>HTML CSS</br>Bootstrap</div>
+                                </div>
+                                <div>
+                                    <div>Javascript</br>jQuery</div>
+                                </div>
+                                <div>
+                                    <div>Mathematics</br>Statistics</div>
+                                </div>
+                                <div>
+                                    <div>Data Mining</div>
+                                </div>
+                                <div>
+                                    <div>Physics</div>
+                                </div>
+                                <div>
+                                    <div>Puzzles</div>
+                                </div>
                             </div>
                             <div class="row text-center">
-                                <div id="slick-prev" class="col-xs-1 col-xs-offset-4" style="background:red">
-                                    <i class="fa-4x fa fa-arrow-circle-o-left"></i>
+                                <div id="slick-prev" class="col-xs-1 col-xs-offset-3">
+                                    <i class="arrow  fa fa-long-arrow-left"></i>
                                 </div>
-                                <div id="slick-next" class="col-xs-offset-2 col-xs-1" style="background:blue">
-                                    <i class="fa-4x  fa fa-arrow-circle-o-right"></i>
+                                <div id="slick-next" class="col-xs-offset-4 col-xs-1">
+                                    <i class="arrow fa fa-long-arrow-right"></i>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="row arrow-down-section">
-                        <a class="page-scroll btn btn-circle" href="#contact"><i class="arrow-down"></i></a>
+                        <a class="page-scroll btn btn-circle" href="#contact"><i class="arrow"></i></a>
                     </div>
                 </div>
             </section>
@@ -248,11 +289,14 @@
         $(document).ready(function() {
             $('#skills').slick({
                 infinite: true,
-                // autoplay: true,
+                autoplay: true,
                 slidesToShow: 4,
                 slidesToScroll: 4,
                 prevArrow: "#slick-prev",
-                nextArrow: "#slick-next"
+                nextArrow: "#slick-next",
+                dots: true,
+                infinite: true,
+                speed: 1500,
             });
         });
         </script>
