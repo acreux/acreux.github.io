@@ -298,7 +298,7 @@ img {
     }
 }
 
-#skills.slick-slide {
+#skills .slick-slide {
     position: relative;
     // padding: 100px 100px;
     margin: 15px;
@@ -332,8 +332,6 @@ img {
 #skills-container {
     padding-left: 100px;
     padding-right: 100px;
-    // padding-top: 10px;
-    // margin-bottom: 30px;
 }
 
 $slick-font-path: "./fonts/" !default;
