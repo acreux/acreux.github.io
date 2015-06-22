@@ -237,6 +237,7 @@ $font-size-navbar: 17px;
 $font-size-feat-h1: 30px;
 .featurette-h1 {
     font-size: $font-size-feat-h1;
+    color: black;
 }
 
 .featurette-h2 {
@@ -252,13 +253,13 @@ $font-size-feat-h1: 30px;
 }
 
 img {
-    filter: gray;
+    // filter: gray;
     /* IE6-9 */
     
-    filter: grayscale(1);
+    // filter: grayscale(1);
     /* Firefox 35+ */
     
-    -webkit-filter: grayscale(1);
+    // -webkit-filter: grayscale(1);
     /* Google Chrome, Safari 6+ & Opera 15+ */
 }
 
@@ -273,6 +274,9 @@ img {
 #project-featurette {
     font-size: 15px;
     .col-lg-4 {
+        h2 {
+            color: black;
+        }
         text-align: center;
     }
     i {
