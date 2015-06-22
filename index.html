@@ -9,6 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/jquery.slick/1.5.0/slick.css" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/pnotify.custom.min.css" />
     <link href="stylesheets/styles.css" rel="stylesheet">
     <script>
     (function(i, s, o, g, r, a, m) {
@@ -45,19 +46,19 @@
             <div class="collapse navbar-collapse navbar-ex1-collapse">
                 <ul class="nav navbar-nav">
                     <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
-                    <li><a class="page-scroll" href="#page-top">About</a></li>
-                    <li><a class="page-scroll" href="#education">Education</a></li>
-                    <li><a class="page-scroll" href="#experience">Experience</a></li>
-                    <li><a class="page-scroll" href="#project">Projects</a></li>
+                    <li><a class="page-scroll" data-scroll-nav="0" href="#page-top">About</a></li>
+                    <li><a class="page-scroll" data-scroll-nav="1" href="#education">Education</a></li>
+                    <li><a class="page-scroll" data-scroll-nav="2" href="#experience">Experience</a></li>
+                    <li><a class="page-scroll" data-scroll-nav="3" href="#project">Projects</a></li>
                     <!-- <li><a class="page-scroll" href="#skills">Skills</a></li> -->
-                    <li><a class="page-scroll" href="#contact">Contact</a></li>
+                    <li><a class="page-scroll" data-scroll-nav="4" href="#contact">Contact</a></li>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
         </div>
         <!-- /.container -->
     </nav>
-    <div id="firstpage" class="container">
+    <div id="firstpage" class="container" data-scroll-index="0">
         <div id="intro-container" class="col-lg-5">
             <div class="intro-w row v-align">
                 <div class="col-lg-5">
@@ -69,7 +70,7 @@
                     <p>Hi! I'm Antoine</p>
                     <p>I study Computer Science in Singapore while exploring Southeast Asia until December 2015.
                     </p>
-                    <p>Footloose, I look for a new journey in a beautiful country starting from January 2016. I am interested in any opportunity in data analytics, software engineering, or as they call it, the "Big Data wave"
+                    <p>Footloose, I look for a new journey in a beautiful country starting from January 2016. I am interested in any opportunity in data analytics, software engineering, or as they call it, the "Big Data wave".
                     </p>
                 </div>
             </div>
@@ -92,7 +93,7 @@
     <div class="container" id="sections">
         <!-- EDUCATION -->
         <div class="col-lg-10 col-lg-offset-1" id="content">
-            <section id="education" class="row nav-section">
+            <section id="education" class="row nav-section" data-scroll-index="1">
                 <div class="col-lg-12 content-section">
                     <div class="row v-align education-featurette">
                         <div class="col-md-7">
@@ -122,7 +123,7 @@
             <!-- END EDUCATION -->
             <hr class="featurette-divider">
             <!-- EXPERIENCE -->
-            <section id="experience" class="row nav-section">
+            <section id="experience" class="row nav-section" data-scroll-index="2">
                 <div class="col-lg-12 content-section">
                     <div class="row v-align experience-featurette">
                         <div class="col-md-7">
@@ -160,7 +161,7 @@
                 </div>
             </section>
             <!-- PROJECTS SKILLS -->
-            <section id="project" class="nav-section">
+            <section id="project" class="nav-section" data-scroll-index="3">
                 <div class="col-lg-12 content-section">
                     <div id="project-featurette" class="row tech-featurette">
                         <div class="col-lg-4">
@@ -250,7 +251,7 @@
                 </div>
             </section>
             <!-- CONTACTS -->
-            <section id="contact" class="nav-section">
+            <section id="contact" class="nav-section" data-scroll-index="4">
                 <div class="col-lg-12 contact-section">
                     <div class="row row-contact">
                         <div class="col-lg-12">
@@ -321,6 +322,8 @@
     <script src="js/vendor/scrolling-nav.js"></script>
     <script src="js/vendor/holder.min.js"></script>
     <script type="text/javascript" src="js/vendor/slick.min.js"></script>
+    <script type="text/javascript" src="js/vendor/pnotify.custom.min.js"></script>
+    <script type="text/javascript" src="https://raw.githubusercontent.com/acreux/scrollIt.js/master/scrollIt.min.js"></script>
     <script>
     $(document).ready(function() {
         $('#skills').slick({
@@ -353,6 +356,28 @@
             function() {
                 $(this).height($(this).width());
             })
+    });
+    </script>
+    <script>
+    $(document).ready(function() {
+        PNotify.prototype.options.delay ? (function() {
+            PNotify.prototype.options.delay -= 500;
+        }()) : (alert('Timer is already at zero.'))
+        new PNotify({
+            title: 'Hello!',
+            text: 'Use arrow keys to scroll\n\n     <i class="fa fa-3x fa-arrow-up"><\i> <i class="fa fa-arrow-down">',
+            styling: "fontawesome",
+            type: 'info',
+            addclass: "stack-bottomright",
+            width: "190px",
+
+
+        });
+    });
+    </script>
+    <script>
+    $(function() {
+        $.scrollIt();
     });
     </script>
 </body>
