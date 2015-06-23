@@ -2407,7 +2407,7 @@ pre code {
 }
 
 /* line 11, ../../../.gem/ruby/2.2.0/gems/bootstrap-sass-3.3.4.1/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
-.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .nav-section, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
   position: relative;
   min-height: 1px;
   padding-left: 15px;
@@ -3198,7 +3198,7 @@ pre code {
 }
 @media (min-width: 1200px) {
   /* line 27, ../../../.gem/ruby/2.2.0/gems/bootstrap-sass-3.3.4.1/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
-  .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
+  .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .nav-section, .col-lg-11, .col-lg-12 {
     float: left;
   }
 
@@ -3248,7 +3248,7 @@ pre code {
   }
 
   /* line 35, ../../../.gem/ruby/2.2.0/gems/bootstrap-sass-3.3.4.1/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
-  .col-lg-10 {
+  .col-lg-10, .nav-section {
     width: 83.33333333%;
   }
 
@@ -3398,7 +3398,7 @@ pre code {
   }
 
   /* line 60, ../../../.gem/ruby/2.2.0/gems/bootstrap-sass-3.3.4.1/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
-  .col-lg-offset-1 {
+  .col-lg-offset-1, .nav-section {
     margin-left: 8.33333333%;
   }
 
@@ -11465,40 +11465,41 @@ html,
 body {
   height: 100%;
   min-width: 1000px;
+  width: 100%;
 }
 
-/* line 17, ../sass/styles.scss */
+/* line 18, ../sass/styles.scss */
 body {
   width: 100%;
   font-family: 'Open Sans', sans-serif;
 }
 
-/* line 27, ../sass/styles.scss */
+/* line 28, ../sass/styles.scss */
 #intro-container {
   margin-top: 65px;
   margin-left: 15px;
   font-size: 15px;
 }
 
-/* line 33, ../sass/styles.scss */
+/* line 34, ../sass/styles.scss */
 .navbar-default {
   color: white;
   background: transparent;
   background-image: none;
 }
-/* line 37, ../sass/styles.scss */
+/* line 38, ../sass/styles.scss */
 .navbar-default .navbar-collapse {
   text-align: center;
 }
 
-/* line 42, ../sass/styles.scss */
+/* line 43, ../sass/styles.scss */
 .navbar-default .navbar-nav {
   display: inline-block;
   float: none;
   vertical-align: top;
 }
 
-/* line 49, ../sass/styles.scss */
+/* line 50, ../sass/styles.scss */
 .navbar-default .navbar-nav > li {
   margin-left: 15px;
   margin-right: 15px;
@@ -11506,31 +11507,31 @@ body {
   font-size: 17px;
 }
 
-/* line 58, ../sass/styles.scss */
+/* line 59, ../sass/styles.scss */
 .navbar-default.affix-top .navbar-nav > li > a, .navbar-default.affix-top .navbar-nav > .active > a {
   color: white;
   background-color: transparent;
 }
 
-/* line 65, ../sass/styles.scss */
+/* line 66, ../sass/styles.scss */
 .navbar-default.affix .navbar-nav > li > a, .navbar-default.affix .navbar-nav > .active > a {
   color: #5a5a5a;
   background-color: transparent;
 }
 
-/* line 73, ../sass/styles.scss */
+/* line 74, ../sass/styles.scss */
 .navbar-default.affix-top .navbar-nav > li > a,
 .navbar-default.affix .navbar-nav > li > a {
   opacity: 0.5;
 }
-/* line 75, ../sass/styles.scss */
+/* line 76, ../sass/styles.scss */
 .navbar-default.affix-top .navbar-nav > li > a:hover,
 .navbar-default.affix .navbar-nav > li > a:hover {
   opacity: 1;
   font-size: 19px;
   font-weight: bold;
 }
-/* line 82, ../sass/styles.scss */
+/* line 83, ../sass/styles.scss */
 .navbar-default.affix-top .navbar-nav > .active > a, .navbar-default.affix-top .navbar-nav > .active > a:hover,
 .navbar-default.affix .navbar-nav > .active > a,
 .navbar-default.affix .navbar-nav > .active > a:hover {
@@ -11539,7 +11540,7 @@ body {
   font-weight: bold;
 }
 
-/* line 90, ../sass/styles.scss */
+/* line 91, ../sass/styles.scss */
 #firstpage {
   height: 115%;
   width: 100%;
@@ -11548,7 +11549,12 @@ body {
   text-align: center;
 }
 
-/* line 99, ../sass/styles.scss */
+/* line 100, ../sass/styles.scss */
+#sections {
+  height: 100%;
+}
+
+/* line 104, ../sass/styles.scss */
 .intro-w {
   background: rgba(0, 0, 0, 0.5);
   -moz-border-radius: 15px;
@@ -11556,12 +11562,12 @@ body {
   border-radius: 15px;
 }
 
-/* line 104, ../sass/styles.scss */
+/* line 109, ../sass/styles.scss */
 .profile-pic-container {
   text-align: center;
 }
 
-/* line 108, ../sass/styles.scss */
+/* line 113, ../sass/styles.scss */
 .intro-text {
   text-align: center;
   line-height: 1.5;
@@ -11570,13 +11576,13 @@ body {
   margin: 5px;
 }
 
-/* line 122, ../sass/styles.scss */
+/* line 127, ../sass/styles.scss */
 .v-align {
   display: flex;
   align-items: center;
 }
 
-/* line 127, ../sass/styles.scss */
+/* line 132, ../sass/styles.scss */
 #arrow-enter {
   transform: translate(-50%, 0);
   left: 50%;
@@ -11585,21 +11591,21 @@ body {
   bottom: 10px;
 }
 
-/* line 133, ../sass/styles.scss */
+/* line 138, ../sass/styles.scss */
 .button-hover, .arrow, .arrow-down, .button-link-contact a, .button-link-about a, #project-featurette i, #project-featurette a img {
   opacity: 0.5;
 }
-/* line 135, ../sass/styles.scss */
+/* line 140, ../sass/styles.scss */
 .button-hover:hover, .arrow:hover, .arrow-down:hover, .button-link-contact a:hover, .button-link-about a:hover, #project-featurette i:hover, #project-featurette a img:hover {
   opacity: 1;
 }
 
-/* line 152, ../sass/styles.scss */
+/* line 157, ../sass/styles.scss */
 .grey, .arrow-down, .button-link-contact a, .nav-section, .arrow-down-section i {
   color: #5a5a5a;
 }
 
-/* line 156, ../sass/styles.scss */
+/* line 161, ../sass/styles.scss */
 #links {
   transform: translate(-50%, 0);
   left: 50%;
@@ -11608,147 +11614,136 @@ body {
   background: transparent;
 }
 
-/* line 162, ../sass/styles.scss */
+/* line 167, ../sass/styles.scss */
 .white, .button-link-about a {
   color: white;
 }
 
-/* line 167, ../sass/styles.scss */
+/* line 171, ../sass/styles.scss */
+#sections-background {
+  position: absolute;
+  background: #000 url("http://www.zastavki.com/pictures/1920x1200/2009/Nature_Seasons_Winter_White_Snow_016468_.jpg") no-repeat scroll center bottom;
+  background-size: cover;
+}
+
+/* line 180, ../sass/styles.scss */
 .button-link-contact a {
   margin: 60px;
 }
 
-/* line 178, ../sass/styles.scss */
+/* line 191, ../sass/styles.scss */
 .button-link-about a {
   margin: 60px;
 }
 
-/* line 188, ../sass/styles.scss */
+/* line 201, ../sass/styles.scss */
 #projects-bubbles {
   text-align: center;
   background: transparent;
 }
 
-/* line 193, ../sass/styles.scss */
+/* line 206, ../sass/styles.scss */
 .nav-section {
-  background: transparent;
   text-align: justify;
   height: 100%;
   padding-top: 50px;
 }
 
-/* line 202, ../sass/styles.scss */
-#education,
-#content,
-#sections,
-.content-section {
-  height: 100%;
-}
-
-/* line 209, ../sass/styles.scss */
+/* line 217, ../sass/styles.scss */
 #education .featurette, #education .education-featurette, #education .experience-featurette {
   text-align: center;
 }
-/* line 212, ../sass/styles.scss */
+/* line 220, ../sass/styles.scss */
 #education .featurette div img, #education .education-featurette div img, #education .experience-featurette div img {
-  height: 200px;
+  height: 150px;
   width: auto;
 }
 
-/* line 219, ../sass/styles.scss */
+/* line 227, ../sass/styles.scss */
 #experience .featurette, #experience .education-featurette, #experience .experience-featurette {
   text-align: center;
 }
-/* line 222, ../sass/styles.scss */
+/* line 230, ../sass/styles.scss */
 #experience .featurette div img, #experience .education-featurette div img, #experience .experience-featurette div img {
   height: auto;
   width: 300px;
 }
 
-/* line 231, ../sass/styles.scss */
+/* line 237, ../sass/styles.scss */
 .education-featurette {
   height: 45%;
 }
 
-/* line 236, ../sass/styles.scss */
+/* line 242, ../sass/styles.scss */
 .experience-featurette {
   height: 30%;
 }
 
-/* line 241, ../sass/styles.scss */
+/* line 247, ../sass/styles.scss */
 .arrow-down-section {
   height: 10%;
   text-align: center;
-  margin: -10px;
 }
 
-/* line 251, ../sass/styles.scss */
+/* line 257, ../sass/styles.scss */
 .featurette-h1 {
   font-size: 30px;
   color: black;
 }
 
-/* line 256, ../sass/styles.scss */
+/* line 262, ../sass/styles.scss */
 .featurette-h2 {
   font-size: 25px;
 }
 
-/* line 260, ../sass/styles.scss */
+/* line 266, ../sass/styles.scss */
 .description-h1 {
   font-size: 15px;
 }
 
-/* line 264, ../sass/styles.scss */
+/* line 270, ../sass/styles.scss */
 .description-h2 {
   font-size: 15px;
 }
 
-/* line 268, ../sass/styles.scss */
-img {
-  /* IE6-9 */
-  /* Firefox 35+ */
-  /* Google Chrome, Safari 6+ & Opera 15+ */
-}
-
-/* line 279, ../sass/styles.scss */
+/* line 274, ../sass/styles.scss */
 .tech-featurette {
   height: 45%;
 }
 
-/* line 283, ../sass/styles.scss */
-#project-featurette div {
-  margin-top: 20px;
-}
-
-/* line 287, ../sass/styles.scss */
+/* line 278, ../sass/styles.scss */
 #project-featurette {
   font-size: 15px;
 }
-/* line 289, ../sass/styles.scss */
+/* line 280, ../sass/styles.scss */
 #project-featurette .col-lg-4 {
   text-align: center;
 }
-/* line 290, ../sass/styles.scss */
+/* line 281, ../sass/styles.scss */
 #project-featurette .col-lg-4 h2 {
   color: black;
 }
-/* line 295, ../sass/styles.scss */
+/* line 286, ../sass/styles.scss */
 #project-featurette i {
   color: #5a5a5a;
 }
-/* line 299, ../sass/styles.scss */
+/* line 290, ../sass/styles.scss */
+#project-featurette div {
+  margin-top: 20px;
+}
+/* line 293, ../sass/styles.scss */
 #project-featurette img {
   height: 130px;
   width: 130px;
 }
-/* line 304, ../sass/styles.scss */
+/* line 298, ../sass/styles.scss */
 #project-featurette a img {
   color: #5a5a5a;
   height: 30px;
   width: 30px;
 }
 
-/* line 313, ../sass/styles.scss */
+/* line 307, ../sass/styles.scss */
 #skills .slick-slide {
   position: relative;
   margin: 15px;
@@ -11758,7 +11753,7 @@ img {
   border-radius: 50%;
   border: 2px solid #5a5a5a;
 }
-/* line 317, ../sass/styles.scss */
+/* line 311, ../sass/styles.scss */
 #skills .slick-slide div {
   top: 50%;
   left: 50%;
@@ -11766,7 +11761,7 @@ img {
   position: absolute;
 }
 
-/* line 327, ../sass/styles.scss */
+/* line 321, ../sass/styles.scss */
 #skills-container {
   padding: 10px 100px;
   padding-top: 50px;
@@ -11774,7 +11769,7 @@ img {
   font-weight: bold;
 }
 
-/* line 346, ../sass/styles.scss */
+/* line 340, ../sass/styles.scss */
 #skills .slick-dots {
   position: absolute;
   bottom: -45px;
@@ -11784,7 +11779,7 @@ img {
   padding: 0;
   width: 100%;
 }
-/* line 354, ../sass/styles.scss */
+/* line 348, ../sass/styles.scss */
 #skills .slick-dots li {
   position: relative;
   display: inline-block;
@@ -11794,7 +11789,7 @@ img {
   padding: 0;
   cursor: pointer;
 }
-/* line 363, ../sass/styles.scss */
+/* line 357, ../sass/styles.scss */
 #skills .slick-dots li button {
   border: 0;
   background: transparent;
@@ -11808,15 +11803,15 @@ img {
   padding: 5px;
   cursor: pointer;
 }
-/* line 375, ../sass/styles.scss */
+/* line 369, ../sass/styles.scss */
 #skills .slick-dots li button:hover, #skills .slick-dots li button:focus {
   outline: none;
 }
-/* line 377, ../sass/styles.scss */
+/* line 371, ../sass/styles.scss */
 #skills .slick-dots li button:hover:before, #skills .slick-dots li button:focus:before {
   opacity: 1;
 }
-/* line 381, ../sass/styles.scss */
+/* line 375, ../sass/styles.scss */
 #skills .slick-dots li button:before {
   position: absolute;
   top: 0;
@@ -11833,34 +11828,20 @@ img {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-/* line 398, ../sass/styles.scss */
+/* line 392, ../sass/styles.scss */
 #skills .slick-dots li.slick-active button:before {
   color: black;
   opacity: 0.75;
 }
 
-/* line 405, ../sass/styles.scss */
-#contact.contact-section {
-  margin-top: 10px;
-  display: table;
-  height: 100%;
-}
-
-/* line 411, ../sass/styles.scss */
+/* line 399, ../sass/styles.scss */
 .fun {
+  text-align: center;
   margin-top: 180px;
   margin-bottom: 90px;
 }
 
-/* line 416, ../sass/styles.scss */
-.contact-section {
-  display: table-cell;
-  max-width: 980px;
-  vertical-align: middle;
-  text-align: center;
-}
-
-/* line 424, ../sass/styles.scss */
-.row-contact h1 {
+/* line 405, ../sass/styles.scss */
+#contact h1 {
   margin-bottom: 50px;
 }
