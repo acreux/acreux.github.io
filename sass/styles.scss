@@ -11,6 +11,7 @@
 html,
 body {
     height: 100%;
+    min-width: 1000px;
 }
 
 body {
@@ -205,15 +206,27 @@ $font-size-navbar: 17px;
     height: 100%;
 }
 
-.featurette {
+#education .featurette {
     text-align: center;
     div {
         img {
-            width: 300px;
-            height: auto;
+            height: 200px;
+            width: auto;
         }
     }
 }
+
+#experience .featurette {
+    text-align: center;
+    div {
+        img {
+            height: auto;
+            width: 300px;
+        }
+    }
+}
+
+
 
 .education-featurette {
     @extend .featurette;
