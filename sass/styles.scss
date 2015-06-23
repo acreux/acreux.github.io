@@ -168,11 +168,15 @@ $font-size-navbar: 17px;
     color: $white;
 }
 
-#sections-background {
+#tree {
     position: absolute;
-    // width: 100%;
-    // background: #000 url("../img/background-edu.jpg") no-repeat scroll center bottom;
-    background: #000 url("http://www.zastavki.com/pictures/1920x1200/2009/Nature_Seasons_Winter_White_Snow_016468_.jpg") no-repeat scroll center bottom;
+    background: #000 url("../img/tree-white.png") no-repeat scroll center bottom;
+    background-size: cover;
+}
+
+#bird {
+    position: absolute;
+    background: #000 url("https://farm4.staticflickr.com/3340/4645097880_8477889efc_b_d.jpg") no-repeat scroll center bottom;
     background-size: cover;
 }
 

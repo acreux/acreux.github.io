@@ -11620,130 +11620,137 @@ body {
 }
 
 /* line 171, ../sass/styles.scss */
-#sections-background {
+#tree {
   position: absolute;
-  background: #000 url("http://www.zastavki.com/pictures/1920x1200/2009/Nature_Seasons_Winter_White_Snow_016468_.jpg") no-repeat scroll center bottom;
+  background: #000 url("../img/tree-white.png") no-repeat scroll center bottom;
   background-size: cover;
 }
 
-/* line 180, ../sass/styles.scss */
+/* line 177, ../sass/styles.scss */
+#bird {
+  position: absolute;
+  background: #000 url("https://farm4.staticflickr.com/3340/4645097880_8477889efc_b_d.jpg") no-repeat scroll center bottom;
+  background-size: cover;
+}
+
+/* line 184, ../sass/styles.scss */
 .button-link-contact a {
   margin: 60px;
 }
 
-/* line 191, ../sass/styles.scss */
+/* line 195, ../sass/styles.scss */
 .button-link-about a {
   margin: 60px;
 }
 
-/* line 201, ../sass/styles.scss */
+/* line 205, ../sass/styles.scss */
 #projects-bubbles {
   text-align: center;
   background: transparent;
 }
 
-/* line 206, ../sass/styles.scss */
+/* line 210, ../sass/styles.scss */
 .nav-section {
   text-align: justify;
   height: 100%;
   padding-top: 50px;
 }
 
-/* line 217, ../sass/styles.scss */
+/* line 221, ../sass/styles.scss */
 #education .featurette, #education .education-featurette, #education .experience-featurette {
   text-align: center;
 }
-/* line 220, ../sass/styles.scss */
+/* line 224, ../sass/styles.scss */
 #education .featurette div img, #education .education-featurette div img, #education .experience-featurette div img {
   height: 150px;
   width: auto;
 }
 
-/* line 227, ../sass/styles.scss */
+/* line 231, ../sass/styles.scss */
 #experience .featurette, #experience .education-featurette, #experience .experience-featurette {
   text-align: center;
 }
-/* line 230, ../sass/styles.scss */
+/* line 234, ../sass/styles.scss */
 #experience .featurette div img, #experience .education-featurette div img, #experience .experience-featurette div img {
   height: auto;
   width: 300px;
 }
 
-/* line 237, ../sass/styles.scss */
+/* line 241, ../sass/styles.scss */
 .education-featurette {
   height: 45%;
 }
 
-/* line 242, ../sass/styles.scss */
+/* line 246, ../sass/styles.scss */
 .experience-featurette {
   height: 30%;
 }
 
-/* line 247, ../sass/styles.scss */
+/* line 251, ../sass/styles.scss */
 .arrow-down-section {
   height: 10%;
   text-align: center;
 }
 
-/* line 257, ../sass/styles.scss */
+/* line 261, ../sass/styles.scss */
 .featurette-h1 {
   font-size: 30px;
   color: black;
 }
 
-/* line 262, ../sass/styles.scss */
+/* line 266, ../sass/styles.scss */
 .featurette-h2 {
   font-size: 25px;
 }
 
-/* line 266, ../sass/styles.scss */
+/* line 270, ../sass/styles.scss */
 .description-h1 {
   font-size: 15px;
 }
 
-/* line 270, ../sass/styles.scss */
+/* line 274, ../sass/styles.scss */
 .description-h2 {
   font-size: 15px;
 }
 
-/* line 274, ../sass/styles.scss */
+/* line 278, ../sass/styles.scss */
 .tech-featurette {
   height: 45%;
 }
 
-/* line 278, ../sass/styles.scss */
+/* line 282, ../sass/styles.scss */
 #project-featurette {
   font-size: 15px;
 }
-/* line 280, ../sass/styles.scss */
+/* line 284, ../sass/styles.scss */
 #project-featurette .col-lg-4 {
   text-align: center;
 }
-/* line 281, ../sass/styles.scss */
+/* line 285, ../sass/styles.scss */
 #project-featurette .col-lg-4 h2 {
   color: black;
 }
-/* line 286, ../sass/styles.scss */
+/* line 290, ../sass/styles.scss */
 #project-featurette i {
   color: #5a5a5a;
 }
-/* line 290, ../sass/styles.scss */
+/* line 294, ../sass/styles.scss */
 #project-featurette div {
   margin-top: 20px;
 }
-/* line 293, ../sass/styles.scss */
+/* line 297, ../sass/styles.scss */
 #project-featurette img {
   height: 130px;
   width: 130px;
 }
-/* line 298, ../sass/styles.scss */
+/* line 302, ../sass/styles.scss */
 #project-featurette a img {
   color: #5a5a5a;
   height: 30px;
   width: 30px;
 }
 
-/* line 307, ../sass/styles.scss */
+/* line 311, ../sass/styles.scss */
 #skills .slick-slide {
   position: relative;
   margin: 15px;
@@ -11753,7 +11760,7 @@ body {
   border-radius: 50%;
   border: 2px solid #5a5a5a;
 }
-/* line 311, ../sass/styles.scss */
+/* line 315, ../sass/styles.scss */
 #skills .slick-slide div {
   top: 50%;
   left: 50%;
@@ -11761,7 +11768,7 @@ body {
   position: absolute;
 }
 
-/* line 321, ../sass/styles.scss */
+/* line 325, ../sass/styles.scss */
 #skills-container {
   padding: 10px 100px;
   padding-top: 50px;
@@ -11769,7 +11776,7 @@ body {
   font-weight: bold;
 }
 
-/* line 340, ../sass/styles.scss */
+/* line 344, ../sass/styles.scss */
 #skills .slick-dots {
   position: absolute;
   bottom: -45px;
@@ -11779,7 +11786,7 @@ body {
   padding: 0;
   width: 100%;
 }
-/* line 348, ../sass/styles.scss */
+/* line 352, ../sass/styles.scss */
 #skills .slick-dots li {
   position: relative;
   display: inline-block;
@@ -11789,7 +11796,7 @@ body {
   padding: 0;
   cursor: pointer;
 }
-/* line 357, ../sass/styles.scss */
+/* line 361, ../sass/styles.scss */
 #skills .slick-dots li button {
   border: 0;
   background: transparent;
@@ -11803,15 +11810,15 @@ body {
   padding: 5px;
   cursor: pointer;
 }
-/* line 369, ../sass/styles.scss */
+/* line 373, ../sass/styles.scss */
 #skills .slick-dots li button:hover, #skills .slick-dots li button:focus {
   outline: none;
 }
-/* line 371, ../sass/styles.scss */
+/* line 375, ../sass/styles.scss */
 #skills .slick-dots li button:hover:before, #skills .slick-dots li button:focus:before {
   opacity: 1;
 }
-/* line 375, ../sass/styles.scss */
+/* line 379, ../sass/styles.scss */
 #skills .slick-dots li button:before {
   position: absolute;
   top: 0;
@@ -11828,20 +11835,20 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-/* line 392, ../sass/styles.scss */
+/* line 396, ../sass/styles.scss */
 #skills .slick-dots li.slick-active button:before {
   color: black;
   opacity: 0.75;
 }
 
-/* line 399, ../sass/styles.scss */
+/* line 403, ../sass/styles.scss */
 .fun {
   text-align: center;
   margin-top: 180px;
   margin-bottom: 90px;
 }
 
-/* line 405, ../sass/styles.scss */
+/* line 409, ../sass/styles.scss */
 #contact h1 {
   margin-bottom: 50px;
 }
