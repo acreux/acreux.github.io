@@ -4,74 +4,16 @@
 <head>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
     <meta charset="utf-8">
+
     <title>Antoine Creux</title>
-    <link rel="shortcut icon" href="img/icons/favicon-space-shuttle.ico" type="image/x-icon" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-    <style>
-    * {
-        padding: 0;
-        margin: 0;
-    }
-    
-    body {
-        background-color: #333;
-    }
-    
-    p {
-        color: #fff;
-        font-family: Helvetica;
-        font-size: 16px;
-        line-height: 24px;
-        margin-bottom: 22px;
-        -webkit-font-smoothing: antialiased;
-    }
-    
-    a {
-        color: #fff;
-        font-weight: bold;
-        text-decoration: none;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-    }
-    
-    a:hover {
-        color: #990000;
-        border-bottom: 1px solid rgba(255, 255, 255, 1);
-    }
-    
-    #monogram {
-        width: 50px;
-        padding: 50px 0 0 0;
-        margin: 0 auto 0 50px;
-    }
-    
-    #about {
-        width: 360px;
-        padding: 0 0 0 150px;
-        margin: -35px 50px 0 auto !important;
-    }
-    
-    @media (max-width: 767px) {
-        #monogram {
-            position: relative;
-            width: auto;
-            padding: 20px;
-            margin: 0;
-        }
-        #about {
-            position: relative;
-            width: auto;
-            padding: 20px;
-            margin: 0 !important;
-        }
-        background-image {
-            opacity: 0.2;
-        }
-    }
-    </style>
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+
+    <!-- <link rel="shortcut icon" href="img/icons/favicon-space-shuttle.ico" type="image/x-icon" /> -->
+    <link href='https://fonts.googleapis.com/css?family=Jura' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/jquery.slick/1.5.0/slick.css" />
     <link href="stylesheets/styles.css" rel="stylesheet">
     <script>
@@ -94,17 +36,6 @@
 
 <body>
     <div>
-        <div id="links" class="button-link-about">
-            <span><a target="_blank" href="https://www.linkedin.com/in/antoinecreux">
-            <i class="fa fa-linkedin"></i></a></span>
-            <span><a target="_blank" href="https://www.github.com/acreux">
-            <i class="fa fa-github-alt"></i></a></span>
-            <span><a target="_blank" href="mailto:antoine.creux@gmail.com"><i class="fa fa-envelope-o"></i></a></span>
-            <span><a target="_blank" href="https://www.twitter.com/creuxa">
-            <i class="fa fa-twitter"></i>
-            </a></span>
-        </div>
-        <!-- CONTACTS -->
         <div class="fun">
             <h3><i class="fa-5x fa fa-beer"></i></h3>
             <h3><i class="fa-5x fa fa-video-camera"></i></h3>
@@ -121,48 +52,63 @@
             <h3><i class="fa-5x fa fa-coffee"></i></h3>
             <h3><i class="fa-5x fa fa-plane"></i></h3>
         </div>
-        <div class="text-center">
-            <h1>Let's get in touch <i class="fa fa-paper-plane"></i></h1>
+        <div id="content">
+            <div id="about">
+                <h1>Hi, I'm Antoine</h1>
+                <h1>Let's get in touch <i class="fa fa-paper-plane"></i></h1>
+            </div>
+            <div id="links">
+                <span><a target="_blank" href="https://www.linkedin.com/in/antoinecreux">
+            <i class="fa fa-linkedin"></i></a></span>
+                <span><a target="_blank" href="https://www.github.com/acreux">
+            <i class="fa fa-github-alt"></i></a></span>
+                <span><a target="_blank" href="mailto:antoine.creux@gmail.com"><i class="fa fa-envelope-o"></i></a></span>
+                <span><a target="_blank" href="https://www.twitter.com/creuxa">
+            <i class="fa fa-twitter"></i>
+            </a></span>
+            </div>
         </div>
-        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-        <script type="text/javascript" src="https://raw.githubusercontent.com/weightshift/The-Personal-Page/master/jquery.backstretch.min.js"></script>
-        <script type="text/javascript">
-        $(function() {
-            $(window).resize(function() {
-                    if ($(this).width() >= 767) {
-                        $.backstretch("img/background-edu.jpg", {
-                            speed: 150
-                        });
-                    }
-                })
-                .resize(); //trigger resize on page load
-        });
-        </script>
-        <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-        <script src="js/vendor/jquery.easing.min.js"></script>
-        <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-        <script type="text/javascript" src="js/vendor/slick.min.js"></script>
-        <script>
-        $(document).ready(function() {
-            $('.fun').slick({
-                accessibility: false,
-                arrows: false,
-                infinite: true,
-                autoplay: true,
-                draggable: false,
-                speed: 2000,
-                autoplaySpeed: 1000,
-                pauseOnHover: false,
-            });
-        });
-        </script>
-        <script>
-        $(document).ready(function() {
-            $('#skills .slick-slide').each(function() {
-                $(this).height($(this).width());
+    </div>
+    <!-- JS -->
+    <script src="js/vendor/jquery.easing.min.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script type="text/javascript" src="https://raw.githubusercontent.com/weightshift/The-Personal-Page/master/jquery.backstretch.min.js"></script>
+    <script type="text/javascript" src="js/vendor/slick.min.js"></script>
+    <script type="text/javascript">
+    $(function() {
+        $(window).resize(function() {
+                if ($(this).width() >= 767) {
+                    $.backstretch("img/background-edu.jpg", {
+                        speed: 150
+                    });
+                }
             })
-        }); >
-        </script>
+            .resize(); //trigger resize on page load
+    });
+    </script>
+    <!-- <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script> -->
+    <!-- <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script> -->
+    <script>
+    $(document).ready(function() {
+        $('.fun').slick({
+            accessibility: false,
+            arrows: false,
+            infinite: true,
+            autoplay: true,
+            draggable: false,
+            speed: 2000,
+            autoplaySpeed: 1000,
+            pauseOnHover: false,
+        });
+    });
+    </script>
+    <script>
+    $(document).ready(function() {
+        $('#skills .slick-slide').each(function() {
+            $(this).height($(this).width());
+        })
+    });
+    </script>
 </body>
 
 </html>

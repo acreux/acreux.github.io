@@ -42,7 +42,7 @@
 }
 
 /* line 12, ../../../.gem/ruby/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_larger.scss */
-.fa-4x, .button-link-contact a i {
+.fa-4x, #links i {
   font-size: 4em;
 }
 
@@ -2892,39 +2892,47 @@
   content: "";
 }
 
-/* line 4, ../sass/styles.scss */
+/* line 6, ../sass/styles.scss */
 body {
+  color: white;
   width: 100%;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Jura', sans-serif;
 }
 
-/* line 16, ../sass/styles.scss */
-.button-hover, .button-link-contact a {
-  opacity: 0.5;
-}
-/* line 18, ../sass/styles.scss */
-.button-hover:hover, .button-link-contact a:hover {
-  opacity: 1;
-}
-
-/* line 23, ../sass/styles.scss */
-.grey, .button-link-contact a {
-  color: #5a5a5a;
+/* line 12, ../sass/styles.scss */
+* {
+  padding: 0;
+  margin: 0;
 }
 
 /* line 28, ../sass/styles.scss */
-.white {
-  color: white;
-}
-
-/* line 34, ../sass/styles.scss */
-.button-link-contact a {
-  margin: 60px;
-}
-
-/* line 44, ../sass/styles.scss */
 .fun {
   text-align: center;
   margin-top: 180px;
   margin-bottom: 90px;
+  opacity: 0.8;
+}
+
+/* line 35, ../sass/styles.scss */
+#content {
+  opacity: 0.8;
+  text-align: center;
+  margin: 10px auto 0;
+  width: 500px;
+}
+/* line 40, ../sass/styles.scss */
+#content #about h1 {
+  font-size: 300%;
+  padding-top: 20px;
+}
+
+/* line 46, ../sass/styles.scss */
+#links i {
+  color: white;
+  opacity: 0.5;
+  margin: 170px 30px 0;
+}
+/* line 50, ../sass/styles.scss */
+#links i:hover {
+  opacity: 0.8;
 }
