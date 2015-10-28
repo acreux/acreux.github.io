@@ -2910,12 +2910,12 @@ body {
   text-align: center;
   margin-top: 180px;
   margin-bottom: 90px;
-  opacity: 0.8;
+  opacity: 1;
 }
 
 /* line 35, ../sass/styles.scss */
 #content {
-  opacity: 0.8;
+  opacity: 1;
   text-align: center;
   margin: 10px auto 0;
   width: 500px;
@@ -2934,5 +2934,5 @@ body {
 }
 /* line 50, ../sass/styles.scss */
 #links i:hover {
-  opacity: 0.8;
+  opacity: 1;
 }
