@@ -1,0 +1,52 @@
+@import "font-awesome";
+body {
+    color: white;
+    width: 100%;
+    font-family: 'Jura', sans-serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+@media (max-width: 767px) {
+    #about {
+        position: relative;
+        width: auto;
+        padding: 20px;
+        margin: 0 !important;
+    }
+    background-image {
+        opacity: 0.2;
+    }
+}
+
+.fun {
+    text-align: center;
+    margin-top: 180px;
+    margin-bottom: 90px;
+    opacity: 1;
+}
+
+#content {
+    opacity: 1;
+    text-align: center;
+    margin: 10px auto 0;
+    width: 500px;
+}
+
+#content #about h1 {
+    font-size: 300%;
+    padding-top: 20px;
+}
+
+#links i {
+    color: white;
+    opacity: 0.5;
+    margin: 170px 30px 0;
+}
+
+#links i:hover {
+    opacity: 1;
+}
