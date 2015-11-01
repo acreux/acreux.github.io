@@ -3,7 +3,6 @@
 
 <head>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-    <meta charset="utf-8">
     <title>Antoine Creux</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <!--[if lt IE 9]>
@@ -69,7 +68,7 @@
     </div>
     <!-- JS -->
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-    <script src="js/vendor/jquery.easing.min.js"></script>
+    <script type="text/javascript" src="js/vendor/jquery.easing.min.js" ></script>
     <script type="text/javascript" src="https://raw.githubusercontent.com/weightshift/The-Personal-Page/master/jquery.backstretch.min.js"></script>
     <script type="text/javascript" src="js/vendor/slick.min.js"></script>
     <script type="text/javascript">
@@ -84,8 +83,6 @@
             .resize(); //trigger resize on page load
     });
     </script>
-    <!-- <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script> -->
-    <!-- <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script> -->
     <script>
     $(document).ready(function() {
         $('.fun').slick({
@@ -98,13 +95,6 @@
             autoplaySpeed: 1000,
             pauseOnHover: false,
         });
-    });
-    </script>
-    <script>
-    $(document).ready(function() {
-        $('#skills .slick-slide').each(function() {
-            $(this).height($(this).width());
-        })
     });
     </script>
 </body>
